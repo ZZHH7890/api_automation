@@ -7,7 +7,7 @@
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="addAddress" invocation-numbers="25 29"/>
+          <include name="addAddress" invocation-numbers="0"/>
         </methods>
       </class> <!-- cases.CheckAddressPhone -->
     </classes>
