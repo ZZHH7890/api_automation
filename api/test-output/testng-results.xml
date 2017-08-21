@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="942" started-at="2017-08-20T14:47:38Z" finished-at="2017-08-20T14:47:39Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="942" started-at="2017-08-20T14:47:38Z" finished-at="2017-08-20T14:47:39Z">
+      <class name="cases.CheckAddressPhone">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="beforeClass" is-config="true" duration-ms="50" started-at="2017-08-20T22:47:38Z" finished-at="2017-08-20T22:47:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:cases.CheckAddressPhone@c038203]" name="addAddress" duration-ms="532" started-at="2017-08-20T22:47:38Z" data-provider="phone" finished-at="2017-08-20T22:47:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷134]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13414672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-20T22:47:39Z" finished-at="2017-08-20T22:47:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- cases.CheckAddressPhone -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
