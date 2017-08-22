@@ -10,7 +10,7 @@
 	</appender>
 	<appender name="fileAppender" class="org.apache.log4j.FileAppender">
 		<param name="Threshold" value="INFO" />
-		<param name="File" value="C:\\Users\\Administrator\\eclipse-workspace\\api\\log\\logfile.log" />
+		<param name="File" value="C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\log\\logfile.log" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%d %-5p [%c{1}] %m %n" />
 		</layout>

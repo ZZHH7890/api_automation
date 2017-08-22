@@ -17,6 +17,6 @@ public class PhonePro {
 
 	@DataProvider(name = "phone")
 	public Object[][] addAddressPhoneData() throws IOException {
-		return ExcelData.getTestData("C:\\Users\\Administrator\\eclipse-workspace\\api\\testDataExcel\\", "testphoneone.xlsx", "phone");
+		return ExcelData.getTestData("C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\testDataExcel\\", "testphoneone.xlsx", "phone");
 	}
 }
