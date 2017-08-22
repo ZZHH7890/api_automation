@@ -1,4 +1,4 @@
-package cases;
+package com.zzkg.cases.cart;
 
 import org.testng.annotations.Test;
 import common.GetMethod;

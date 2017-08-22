@@ -1,12 +1,13 @@
-package cases;
+package com.zzkg.cases.addaddress;
 
 import org.testng.annotations.Test;
+
+import com.zzkg.datapro.addaddressdata.PhonePro;
 
 import common.Log;
 import common.Login;
 import common.PostMethod;
 import datapro.ConfigPro;
-import datapro.PhonePro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;

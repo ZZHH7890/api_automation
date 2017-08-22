@@ -3,8 +3,8 @@
 <suite name="Suite" parallel="false">
 	<test name="Test">
 		<classes>
-			<class name="cases.CheckAddressPhone" />
-			<!-- <class name="cases.CheckCart" /> -->
+			<!-- <class name="com.zzkg.cases.addaddress.CheckAddressPhone" /> -->
+			<class name="com.zzkg.cases.cart.CheckCart" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

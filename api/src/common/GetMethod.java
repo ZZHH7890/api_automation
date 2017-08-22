@@ -11,7 +11,7 @@ import org.apache.http.util.EntityUtils;
 public class GetMethod {
 	public static String getHttpResult(String host, String path, String region, String token)
 			throws ClientProtocolException, IOException {
-		Log.info("+++++++++++++++++结束调用GetMethod++++++++++++++++++++++");
+		Log.info("+++++++++++++++++开始调用GetMethod++++++++++++++++++++++");
 		HttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpGet httpget = new HttpGet(apiurl);

@@ -1,10 +1,9 @@
-package datapro;
+package com.zzkg.datapro.addaddressdata;
 
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
 import common.ExcelData;
-import common.Log;
 
 public class PhonePro {
 

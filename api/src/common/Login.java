@@ -14,7 +14,7 @@ import net.sf.json.JSONObject;
 public class Login {
 	public static String getToken(String phone, String code, String introducerCode)
 			throws ClientProtocolException, IOException {
-		Log.info("+++++++++++++++++开始调用Login++++++++++++++++++++++");
+		Log.info("+++++++++++++++++开始调用Login获取登录token++++++++++++++++++++++");
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		// 创建一个httppost请求
 		String loginurl = "http://release.thy360.com/v2/regist/code";
@@ -34,7 +34,7 @@ public class Login {
 		JSONObject jsonresult = JSONObject.fromObject(strResult);
 		String token = jsonresult.getString("token");
 		httppost.releaseConnection();
-		Log.info("+++++++++++++++++结束调用Login++++++++++++++++++++++");
+		Log.info("+++++++++++++++++结束调用Login返回登录token++++++++++++++++++++++");
 		return token;
 	}
 
