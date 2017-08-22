@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="942" started-at="2017-08-20T14:47:38Z" finished-at="2017-08-20T14:47:39Z">
+  <suite name="Suite" duration-ms="1160" started-at="2017-08-21T16:11:49Z" finished-at="2017-08-21T16:11:50Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="942" started-at="2017-08-20T14:47:38Z" finished-at="2017-08-20T14:47:39Z">
+    <test name="Test" duration-ms="1160" started-at="2017-08-21T16:11:49Z" finished-at="2017-08-21T16:11:50Z">
       <class name="cases.CheckAddressPhone">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="beforeClass" is-config="true" duration-ms="50" started-at="2017-08-20T22:47:38Z" finished-at="2017-08-20T22:47:38Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="beforeClass" is-config="true" duration-ms="55" started-at="2017-08-22T00:11:49Z" finished-at="2017-08-22T00:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:cases.CheckAddressPhone@c038203]" name="addAddress" duration-ms="532" started-at="2017-08-20T22:47:38Z" data-provider="phone" finished-at="2017-08-20T22:47:39Z">
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:cases.CheckAddressPhone@c038203]" name="addAddress" duration-ms="735" started-at="2017-08-22T00:11:50Z" data-provider="phone" finished-at="2017-08-22T00:11:50Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAddress -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-20T22:47:39Z" finished-at="2017-08-20T22:47:39Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-22T00:11:50Z" finished-at="2017-08-22T00:11:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

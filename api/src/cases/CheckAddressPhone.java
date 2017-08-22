@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import common.Log;
 import common.Login;
 import common.PostMethod;
+import datapro.ConfigPro;
 import datapro.PhonePro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
@@ -19,13 +20,8 @@ public class CheckAddressPhone {
 	@Test(enabled = true, dataProvider = "phone", dataProviderClass = PhonePro.class, priority = 1)
 	public void addAddress(String name, String phone, String re) throws ClientProtocolException, IOException {
 		Log.startTestCase("CheckAddressPhone用例测试开始");
-		String host = "http://release.thy360.com";
-		String path = "/v3/setting/address";
-		String region = "813395";
-		String tokenphone = "13714672775";
-		String code = "1234";
-		String introducerCode = "";
-		String token = Login.getToken(tokenphone, code, introducerCode);
+		String[] configStr= ConfigPro.getConfig();
+		String token = Login.getToken(configStr[3], configStr[4],configStr[5]);
 		JSONObject jsonParam = new JSONObject();
 		jsonParam.put("addressBuildingId", "259");
 		jsonParam.put("addressNaviId", "18039");
@@ -39,7 +35,7 @@ public class CheckAddressPhone {
 		jsonParam.put("regionId", "813395");
 		jsonParam.put("room1", "11111A");
 		jsonParam.put("village", "东角山");
-		String respondresult = PostMethod.getHttpResult(host, path, region, token, jsonParam);
+		String respondresult = PostMethod.getHttpResult(configStr[0], configStr[1], configStr[2], token, jsonParam);
 		Assert.assertTrue(respondresult.contains(re));
         Log.endTestCase("CheckAddressPhone用例测试结束");
 	}
