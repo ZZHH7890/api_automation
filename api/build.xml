@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="testoutput" name="api">
+	<taskdef name="testng" classname="org.testng.TestNGAntTask">
+		<classpath>
+			<pathelement location="lib/testng-6.9.9.jar" />
+		</classpath>
+	</taskdef>
+	<property name="basedir" value="C:\Users\Administrator\eclipse-workspace\api_automation\api" />
+	<property name="testoutputdir" location="test-output" />
+	<property name="srcdir" location="src" />
+	<property name="libdir" location="lib" />
+	<property name="bindir" location="bin" />
+	<path id="classes">
+		<fileset dir="${libdir}" includes="*jar"/>
+		<pathelement location="${basedir}/bin/" />
+	</path>
+
+	<target name="runtest">
+		<testng outputdir="${testoutputdir}" classpathref="classes">
+			<xmlfileset dir="${srcdir}" includes="testng.xml" />
+		</testng>
+	</target>
+	<target name="testoutput" depends="runtest">
+		<xslt in="${testoutputdir}/testng-results.xml" style="${testoutputdir}/testng-results.xsl"
+			out="${testoutputdir}/index1.html" classpathref="classes">
+			<param name="testNgXslt.outputDir"
+				expression="C:\Users\Administrator\eclipse-workspace\api_automation\api\test-output" />
+		</xslt>
+	</target>
+</project>
