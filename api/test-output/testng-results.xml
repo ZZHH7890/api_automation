@@ -1,17 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1160" started-at="2017-08-21T16:11:49Z" finished-at="2017-08-21T16:11:50Z">
+  <suite name="Suite" duration-ms="1498" started-at="2017-08-22T18:00:39Z" finished-at="2017-08-22T18:00:40Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1160" started-at="2017-08-21T16:11:49Z" finished-at="2017-08-21T16:11:50Z">
-      <class name="cases.CheckAddressPhone">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="beforeClass" is-config="true" duration-ms="55" started-at="2017-08-22T00:11:49Z" finished-at="2017-08-22T00:11:49Z">
+    <test name="api" duration-ms="1498" started-at="2017-08-22T18:00:39Z" finished-at="2017-08-22T18:00:40Z">
+      <class name="com.zzkg.cases.cart.CheckCart">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.cart.CheckCart@2a70a3d8]" name="beforeClass" is-config="true" duration-ms="52" started-at="2017-08-23T02:00:39Z" finished-at="2017-08-23T02:00:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:cases.CheckAddressPhone@c038203]" name="addAddress" duration-ms="735" started-at="2017-08-22T00:11:50Z" data-provider="phone" finished-at="2017-08-22T00:11:50Z">
+        <test-method status="PASS" signature="checkCart(java.lang.String)[pri:2, instance:com.zzkg.cases.cart.CheckCart@2a70a3d8]" name="checkCart" duration-ms="629" started-at="2017-08-23T02:00:39Z" data-provider="cart" finished-at="2017-08-23T02:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[13714672775]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCart -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.cart.CheckCart@2a70a3d8]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-23T02:00:39Z" finished-at="2017-08-23T02:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.zzkg.cases.cart.CheckCart -->
+      <class name="com.zzkg.cases.addaddress.CheckAddressPhone">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.CheckAddressPhone@289d1c02]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-08-23T02:00:39Z" finished-at="2017-08-23T02:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@289d1c02]" name="addAddress" duration-ms="461" started-at="2017-08-23T02:00:40Z" data-provider="phone" finished-at="2017-08-23T02:00:40Z">
           <params>
             <param index="0">
               <value>
@@ -32,11 +53,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAddress -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:cases.CheckAddressPhone@c038203]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-22T00:11:50Z" finished-at="2017-08-22T00:11:50Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.CheckAddressPhone@289d1c02]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-23T02:00:40Z" finished-at="2017-08-23T02:00:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- cases.CheckAddressPhone -->
-    </test> <!-- Test -->
+      </class> <!-- com.zzkg.cases.addaddress.CheckAddressPhone -->
+    </test> <!-- api -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -10,19 +10,20 @@ import common.PostMethod;
 import datapro.ConfigPro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Guice;
+
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
+@Guice
 public class CheckAddressPhone {
 
 	@Test(enabled = true, dataProvider = "phone", dataProviderClass = PhonePro.class, priority = 1)
 	public void addAddress(String name, String phone, String re) throws ClientProtocolException, IOException {
 		Log.startTestCase("CheckAddressPhone用例测试开始");
-		String[] configStr= ConfigPro.getConfig();
-		String token = Login.getToken(configStr[3], configStr[4],configStr[5]);
 		JSONObject jsonParam = new JSONObject();
 		jsonParam.put("addressBuildingId", "259");
 		jsonParam.put("addressNaviId", "18039");
@@ -36,7 +37,8 @@ public class CheckAddressPhone {
 		jsonParam.put("regionId", "813395");
 		jsonParam.put("room1", "11111A");
 		jsonParam.put("village", "东角山");
-		String respondresult = PostMethod.getHttpResult(configStr[0], configStr[1], configStr[2], token, jsonParam);
+		String respondresult = PostMethod.getHttpResult(ConfigPro.getHost(), ConfigPro.getApi(), ConfigPro.getRegion(), Login.getToken(ConfigPro.getPhone(), ConfigPro.getCode(),ConfigPro.getIntroducerCode())
+, jsonParam);
 		Assert.assertTrue(respondresult.contains(re));
         Log.endTestCase("CheckAddressPhone用例测试结束");
 	}

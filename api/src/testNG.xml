@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite" parallel="false">
-	<test name="Test">
+	<test name="api">
 		<classes>
-			<class name="cases.CheckAddressPhone" />
-			<!-- <class name="cases.CheckCart" /> -->
+			<class name="com.zzkg.cases.cart.CheckCart" />
+			<class name="com.zzkg.cases.addaddress.CheckAddressPhone" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -12,7 +12,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelData {
-	// 获取二维数组数据提供给测试数据提供类datapro
+	// 获取二维数组数据提供给测试数据提供类pro
 	public static Object[][] getTestData(String filepath, String filename, String sheetname) throws IOException {
 		Log.info("**************************表格测试数据读取开始**********************************");
 		File file = new File(filepath + "\\" + filename);
@@ -34,19 +34,8 @@ public class ExcelData {
 			String fields[] = new String[row.getLastCellNum()];
 			for (int j = 0; j < row.getLastCellNum(); j++) {
 				if (row.getCell(j) != null) {
-					if (j == 1) {
-						DecimalFormat df = new DecimalFormat("#");
-						Number value = row.getCell(j).getNumericCellValue();
-						String res = df.format(value);
-						fields[j] = res;
-						Log.info(headerrowfields[j] + "：" + fields[j]);
-					} else if (j == 0) {
-						fields[j] = row.getCell(j).getStringCellValue();
-						Log.info(headerrowfields[j] + "：" + fields[j]);
-					} else {
-						fields[j] = row.getCell(j).getStringCellValue();
-						Log.info(headerrowfields[j] + "：" + fields[j]);
-					}
+					fields[j] = row.getCell(j).getStringCellValue();
+					Log.info(headerrowfields[j] + "：" + fields[j]);
 				}
 			}
 			records.add(fields);
@@ -81,10 +70,10 @@ public class ExcelData {
 		String fields[] = new String[row.getLastCellNum()];
 		for (int j = 0; j < row.getLastCellNum(); j++) {
 			if (row.getCell(j) != null) {
-				
-					fields[j] = row.getCell(j).getStringCellValue();
-					Log.info(headerrowfields[j] + "：" + fields[j]);
-			
+
+				fields[j] = row.getCell(j).getStringCellValue();
+				Log.info(headerrowfields[j] + "：" + fields[j]);
+
 			}
 		}
 		workbook.close();

@@ -1,24 +1,30 @@
 package com.zzkg.cases.cart;
 
 import org.testng.annotations.Test;
+
 import common.GetMethod;
 import common.Log;
 import common.Login;
+import datapro.CartPro;
+
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Guice;
+
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
+@Guice
 public class CheckCart {
-	@Test
-	public void checkCart() throws ClientProtocolException, IOException {
+	@Test(enabled = true, dataProvider = "cart", dataProviderClass = CartPro.class, priority = 2)
+	public void checkCart(String phone) throws ClientProtocolException, IOException {
 		Log.startTestCase("checkCart”√¿˝≤‚ ‘ø™ º");
 		String host = "http://release.thy360.com";
 		String path = "/ja/user/v3/od/get/cart";
 		String region = "813395";
-		String phone = "13714672775";
+//		String phone = "13714672775";
 		String code = "1234";
 		String introducerCode = "";
 		String token = Login.getToken(phone, code, introducerCode);

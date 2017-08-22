@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <test name="api(failed)">
     <classes>
-      <class name="cases.CheckAddressPhone">
+      <class name="com.zzkg.cases.cart.CheckCart">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="addAddress" invocation-numbers="0"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- cases.CheckAddressPhone -->
+      </class> <!-- com.zzkg.cases.cart.CheckCart -->
+      <class name="com.zzkg.cases.addaddress.CheckAddressPhone">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="addAddress"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.zzkg.cases.addaddress.CheckAddressPhone -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- api(failed) -->
 </suite> <!-- Failed suite [Suite] -->

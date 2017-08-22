@@ -17,12 +17,12 @@
 
 	<target name="runtest">
 		<testng outputdir="${testoutputdir}" classpathref="classes">
-			<xmlfileset dir="${srcdir}" includes="testng.xml" />
+			<xmlfileset dir="${srcdir}" includes="testNG.xml" />
 		</testng>
 	</target>
 	<target name="testoutput" depends="runtest">
 		<xslt in="${testoutputdir}/testng-results.xml" style="${testoutputdir}/testng-results.xsl"
-			out="${testoutputdir}/index1.html" classpathref="classes">
+			out="${testoutputdir}/api_report.html" classpathref="classes">
 			<param name="testNgXslt.outputDir"
 				expression="C:\Users\Administrator\eclipse-workspace\api_automation\api\test-output" />
 		</xslt>
