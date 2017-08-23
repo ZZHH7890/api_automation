@@ -10,8 +10,8 @@ public class Log {
 	}
 	
 	public static void endTestCase(String endTestCase) {
-		log.info("----------------------------------------------------------------");
 		log.info("***********************"+endTestCase+ "*************************");
+		log.info("----------------------------------------------------------------");
 	}
 
 	public static void info(String message) {

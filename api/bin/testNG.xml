@@ -3,8 +3,9 @@
 <suite name="Suite" parallel="false">
 	<test name="api">
 		<classes>
-			<class name="com.zzkg.cases.cart.CheckCart" />
-			<class name="com.zzkg.cases.addaddress.CheckAddressPhone" />
+			<!-- <class name="com.zzkg.cases.cart.CheckCart" />
+			<class name="com.zzkg.cases.addaddress.CheckAddressPhone" /> -->
+			<class name="test.NewTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

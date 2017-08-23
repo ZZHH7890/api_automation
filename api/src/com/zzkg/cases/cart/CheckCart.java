@@ -8,15 +8,12 @@ import common.Login;
 import datapro.CartPro;
 
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Guice;
-
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-@Guice
 public class CheckCart {
 	@Test(enabled = true, dataProvider = "cart", dataProviderClass = CartPro.class, priority = 2)
 	public void checkCart(String phone) throws ClientProtocolException, IOException {

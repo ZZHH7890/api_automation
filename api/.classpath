@@ -30,7 +30,5 @@
 	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/api_automation/api/lib/poi-scratchpad-3.11-20141221.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/api_automation/api/lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/api_automation/api/lib/jcommander.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/api_automation/api/lib/guice-3.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/api_automation/api/lib/javax.inject.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

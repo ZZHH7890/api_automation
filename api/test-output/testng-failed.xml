@@ -3,19 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="api(failed)">
     <classes>
-      <class name="com.zzkg.cases.cart.CheckCart">
+      <class name="test.NewTest">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.zzkg.cases.cart.CheckCart -->
-      <class name="com.zzkg.cases.addaddress.CheckAddressPhone">
-        <methods>
           <include name="beforeClass"/>
-          <include name="addAddress"/>
-          <include name="afterClass"/>
+          <include name="newTest"/>
         </methods>
-      </class> <!-- com.zzkg.cases.addaddress.CheckAddressPhone -->
+      </class> <!-- test.NewTest -->
     </classes>
   </test> <!-- api(failed) -->
 </suite> <!-- Failed suite [Suite] -->

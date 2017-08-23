@@ -10,15 +10,12 @@ import common.PostMethod;
 import datapro.ConfigPro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Guice;
-
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-@Guice
 public class CheckAddressPhone {
 
 	@Test(enabled = true, dataProvider = "phone", dataProviderClass = PhonePro.class, priority = 1)
