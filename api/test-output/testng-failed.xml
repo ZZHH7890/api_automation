@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="api(failed)">
     <classes>
-      <class name="test.NewTest">
+      <class name="com.zzkg.cases.gift.ExchangeGift">
         <methods>
           <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="zeroNumber"/>
           <include name="beforeClass"/>
-          <include name="newTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- test.NewTest -->
+      </class> <!-- com.zzkg.cases.gift.ExchangeGift -->
     </classes>
   </test> <!-- api(failed) -->
 </suite> <!-- Failed suite [Suite] -->

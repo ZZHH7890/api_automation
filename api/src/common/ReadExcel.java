@@ -11,10 +11,10 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelData {
+public class ReadExcel {
 	// 获取二维数组数据提供给测试数据提供类pro
 	public static Object[][] getTestData(String filepath, String filename, String sheetname) throws IOException {
-		Log.info("**************************表格测试数据读取开始**********************************");
+		Log.info("=========================表格测试数据读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
 		Log.info("测试数据表格：" + file.toString());
 		FileInputStream inputStream = new FileInputStream(file);
@@ -39,46 +39,68 @@ public class ExcelData {
 				}
 			}
 			records.add(fields);
-
 		}
-
 		Object[][] results = new Object[records.size()][];
 		for (int i = 0; i < records.size(); i++) {
 			results[i] = records.get(i);
 		}
 		workbook.close();
-		Log.info("**************************表格测试数据读取结束**********************************");
+		Log.info("=========================表格测试数据读取结束=========================");
 		return results;
 
 	}
 
-	public static String[] getConfigData(String filepath, String filename, String sheetname) throws IOException {
-		Log.info("**************************表格配置数据读取开始**********************************");
+	public static String[] getClearCartData(String filepath, String filename, String sheetname) throws IOException {
+		Log.info("=========================清空购物车数据读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
 		Log.info("配置文件表格：" + file.toString());
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook workbook = new XSSFWorkbook(inputStream);
 		Sheet sheet = workbook.getSheet(sheetname);
 		// 获取表格表头信息
-		Row headerrow = sheet.getRow(0);
+		Row headerrow = sheet.getRow(1);
 		String headerrowfields[] = new String[headerrow.getLastCellNum()];
 		for (int k = 0; k < headerrow.getLastCellNum(); k++) {
 			headerrowfields[k] = headerrow.getCell(k).getStringCellValue();
 		}
 		// 获取表格数据信息
-		Row row = sheet.getRow(1);
+		Row row = sheet.getRow(2);
 		String fields[] = new String[row.getLastCellNum()];
 		for (int j = 0; j < row.getLastCellNum(); j++) {
 			if (row.getCell(j) != null) {
-
 				fields[j] = row.getCell(j).getStringCellValue();
 				Log.info(headerrowfields[j] + "：" + fields[j]);
-
 			}
 		}
 		workbook.close();
-		Log.info("**************************表格配置数据读取结束**********************************");
-
+		Log.info("=========================清空购物车数据读取结束=========================");
+		return fields;
+	}
+	
+	public static String[] getExchangeGiftData(String filepath, String filename, String sheetname) throws IOException {
+		Log.info("=========================添加赠品数据读取开始=========================");
+		File file = new File(filepath + "\\" + filename);
+		Log.info("配置文件表格：" + file.toString());
+		FileInputStream inputStream = new FileInputStream(file);
+		Workbook workbook = new XSSFWorkbook(inputStream);
+		Sheet sheet = workbook.getSheet(sheetname);
+		// 获取表格表头信息
+		Row headerrow = sheet.getRow(5);
+		String headerrowfields[] = new String[headerrow.getLastCellNum()];
+		for (int k = 0; k < headerrow.getLastCellNum(); k++) {
+			headerrowfields[k] = headerrow.getCell(k).getStringCellValue();
+		}
+		// 获取表格数据信息
+		Row row = sheet.getRow(6);
+		String fields[] = new String[row.getLastCellNum()];
+		for (int j = 0; j < row.getLastCellNum(); j++) {
+			if (row.getCell(j) != null) {
+				fields[j] = row.getCell(j).getStringCellValue();
+				Log.info(headerrowfields[j] + "：" + fields[j]);
+			}
+		}
+		workbook.close();
+		Log.info("=========================添加赠品数据读取结束=========================");
 		return fields;
 	}
 }

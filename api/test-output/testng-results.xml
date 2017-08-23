@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="916" started-at="2017-08-23T10:28:11Z" finished-at="2017-08-23T10:28:12Z">
+  <suite name="Suite" duration-ms="2581" started-at="2017-08-23T16:25:30Z" finished-at="2017-08-23T16:25:33Z">
     <groups>
     </groups>
-    <test name="api" duration-ms="916" started-at="2017-08-23T10:28:11Z" finished-at="2017-08-23T10:28:12Z">
-      <class name="test.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.NewTest@cc285f4]" name="beforeClass" is-config="true" duration-ms="83" started-at="2017-08-23T18:28:11Z" finished-at="2017-08-23T18:28:11Z">
+    <test name="api" duration-ms="2581" started-at="2017-08-23T16:25:30Z" finished-at="2017-08-23T16:25:33Z">
+      <class name="com.zzkg.cases.gift.ExchangeGift">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="beforeClass" is-config="true" duration-ms="56" started-at="2017-08-24T00:25:30Z" finished-at="2017-08-24T00:25:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="newTest()[pri:0, instance:test.NewTest@cc285f4]" name="newTest" duration-ms="818" started-at="2017-08-23T18:28:11Z" finished-at="2017-08-23T18:28:12Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="beforeMethod" is-config="true" duration-ms="1047" started-at="2017-08-24T00:25:31Z" finished-at="2017-08-24T00:25:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- newTest -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.NewTest@cc285f4]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-23T18:28:12Z" finished-at="2017-08-23T18:28:12Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="negativeNumber()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="negativeNumber" duration-ms="526" started-at="2017-08-24T00:25:32Z" finished-at="2017-08-24T00:25:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeNumber -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-08-24T00:25:32Z" finished-at="2017-08-24T00:25:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="beforeMethod" is-config="true" duration-ms="467" started-at="2017-08-24T00:25:32Z" finished-at="2017-08-24T00:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="zeroNumber()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="zeroNumber" duration-ms="476" started-at="2017-08-24T00:25:33Z" finished-at="2017-08-24T00:25:33Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.gift.ExchangeGift.zeroNumber(ExchangeGift.java:48)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- zeroNumber -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-08-24T00:25:33Z" finished-at="2017-08-24T00:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@64c64813]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-24T00:25:33Z" finished-at="2017-08-24T00:25:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- test.NewTest -->
+      </class> <!-- com.zzkg.cases.gift.ExchangeGift -->
     </test> <!-- api -->
   </suite> <!-- Suite -->
 </testng-results>
