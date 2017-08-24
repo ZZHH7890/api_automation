@@ -60,6 +60,28 @@ public class HttpClientMethod {
 		return strResult;
 	}
 	
+	public static String postJsonToken(String host, String path, String region, JSONObject jsonParam)
+			throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用postJsonToken++++++++++++++++++++++");
+		HttpClient httpclient = HttpClients.createDefault();
+		String apiurl = host + path;
+		HttpPost httppost = new HttpPost(apiurl);
+		httppost.setHeader("Content-Type", "application/json");
+		httppost.setHeader("region", region);
+		Log.info("测试服务器：" + host);
+		Log.info("测试接口：" + path);
+		Log.info("测试社区：" + region);
+		Log.info("测试接口的传入json数据："+jsonParam.toString());
+		StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");// 解决中文乱码问题
+		httppost.setEntity(entity);
+		HttpResponse httpresponse = httpclient.execute(httppost);
+		String strResult = EntityUtils.toString(httpresponse.getEntity());
+		Log.info("测试接口返回:" + strResult);
+		httppost.releaseConnection();
+		Log.info("+++++++++++++++++结束调用postJsonToken++++++++++++++++++++++");
+		return strResult;
+	}
+	
 	public static String postJson(String host, String path, String region, String token, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJson++++++++++++++++++++++");

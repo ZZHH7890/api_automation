@@ -7,7 +7,6 @@
         <methods>
           <include name="afterClass"/>
           <include name="afterMethod"/>
-          <include name="negativeNumber"/>
           <include name="zeroNumber"/>
           <include name="beforeClass"/>
           <include name="beforeMethod"/>
