@@ -5,6 +5,7 @@ import java.io.IOException;
 import common.ReadExcel;
 
 public class GetGiftData {
+	
 	public static String getHost() throws IOException {
 		String[] initdata = ReadExcel.getExchangeGiftData(
 				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\initExcel\\", "init.xlsx", "init");

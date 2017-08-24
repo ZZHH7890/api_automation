@@ -6,6 +6,8 @@ import common.HttpClientMethod;
 import common.InitEnv;
 import common.Log;
 import common.Login;
+import datapro.GetApi;
+import datapro.GetConfig;
 import datapro.GetGiftData;
 import net.sf.json.JSONObject;
 
@@ -24,12 +26,15 @@ public class ExchangeGift {
 	@Test
 	public void negativeNumber() throws ClientProtocolException, IOException {
 		Log.startTestCase("negativeNumber用例测试开始");
+		JSONObject jsonconfig = GetConfig.config();
+		JSONObject jsoncapi = GetApi.exchangeGiftApi();
+		
 		JSONObject jsonParam = new JSONObject();
 		jsonParam.put("dealCount", "-3");
 		//自动化测试赠品1
 		jsonParam.put("dealId", "994140");
 		jsonParam.put("selected", "true");
-		String respondresult = HttpClientMethod.putJson(GetGiftData.getHost(), GetGiftData.getApi(), GetGiftData.getRegion(), Login.getToken(GetGiftData.getPhone(), GetGiftData.getCode(),GetGiftData.getIntroducerCode())
+		String respondresult = HttpClientMethod.putJson(jsonconfig.getString("host"), jsoncapi.getString("apiurl"), jsonconfig.getString("region"), Login.getToken(jsonconfig.getString("phone"), jsonconfig.getString("code"),jsonconfig.getString("introducerCode"))
 , jsonParam);
 		Assert.assertTrue(respondresult.contains("购买数量不能为负数"));
         Log.endTestCase("negativeNumber用例测试结束");

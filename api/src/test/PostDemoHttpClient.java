@@ -6,6 +6,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.xml.DOMConfigurator;
 
 import net.sf.json.JSONObject;
 
@@ -19,6 +20,7 @@ public class PostDemoHttpClient {
 
 
 	public static void main(String[] args) {
+		DOMConfigurator.configure("log4j.xml");
 
 		String loginURL = "http://release.thy360.com/v2/regist/code";
 		// 创建一个httppost请求

@@ -4,7 +4,6 @@ import java.util.List;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -76,7 +75,7 @@ public class ReadExcel {
 		Log.info("=========================清空购物车数据读取结束=========================");
 		return fields;
 	}
-	
+
 	public static String[] getExchangeGiftData(String filepath, String filename, String sheetname) throws IOException {
 		Log.info("=========================添加赠品数据读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
@@ -101,6 +100,55 @@ public class ReadExcel {
 		}
 		workbook.close();
 		Log.info("=========================添加赠品数据读取结束=========================");
+		return fields;
+	}
+
+	public static String[] getConfigData(String filepath, String filename, String sheetname) throws IOException {
+		Log.info("=========================测试环境数据读取开始=========================");
+		File file = new File(filepath + "\\" + filename);
+		Log.info("配置文件表格：" + file.toString());
+		FileInputStream inputStream = new FileInputStream(file);
+		Workbook workbook = new XSSFWorkbook(inputStream);
+		Sheet sheet = workbook.getSheet(sheetname);
+		// 获取表格表头信息
+		Row headerrow = sheet.getRow(0);
+		String headerrowfields[] = new String[headerrow.getLastCellNum()];
+		for (int k = 0; k < headerrow.getLastCellNum(); k++) {
+			headerrowfields[k] = headerrow.getCell(k).getStringCellValue();
+		}
+		// 获取表格数据信息
+		Row row = sheet.getRow(1);
+		String fields[] = new String[row.getLastCellNum()];
+		for (int j = 0; j < row.getLastCellNum(); j++) {
+			if (row.getCell(j) != null) {
+				fields[j] = row.getCell(j).getStringCellValue();
+				Log.info(headerrowfields[j] + "：" + fields[j]);
+			}
+		}
+		workbook.close();
+		Log.info("=========================测试环境数据读取结束=========================");
+		return fields;
+	}
+
+	public static String[] getExchangeGiftApi(String filepath, String filename, String sheetname) throws IOException {
+		Log.info("=========================兑换赠品接口信息读取开始=========================");
+		File file = new File(filepath + "\\" + filename);
+		Log.info("配置文件表格：" + file.toString());
+		FileInputStream inputStream = new FileInputStream(file);
+		Workbook workbook = new XSSFWorkbook(inputStream);
+		Sheet sheet = workbook.getSheet(sheetname);
+
+		// 获取表格数据信息
+		Row row = sheet.getRow(2);
+		String fields[] = new String[row.getLastCellNum()];
+		for (int j = 0; j < row.getLastCellNum(); j++) {
+			if (row.getCell(j) != null) {
+				fields[j] = row.getCell(j).getStringCellValue();
+			}
+		}
+		Log.info(fields[0] + ": " + fields[1]);
+		workbook.close();
+		Log.info("=========================兑换赠品接口信息读取结束=========================");
 		return fields;
 	}
 }
