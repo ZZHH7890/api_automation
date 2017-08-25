@@ -2,11 +2,11 @@ package com.zzkg.cases.addaddress;
 
 import org.testng.annotations.Test;
 
-import com.zzkg.datapro.addaddressdata.PhonePro;
-
+import common.GetApi;
 import common.HttpClientMethod;
 import common.Log;
 import common.Login;
+import datapro.CheckAddressPhonePro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
@@ -16,14 +16,17 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class CheckAddressPhone {
-
-	@Test(enabled = true, dataProvider = "phone", dataProviderClass = PhonePro.class, priority = 1)
+	@Test(enabled = true, dataProvider = "phone", dataProviderClass = CheckAddressPhonePro.class, priority = 1)
 	public void addAddress(String name, String phone, String re) throws ClientProtocolException, IOException {
-		/*Log.startTestCase("CheckAddressPhone用例测试开始");
+		Log.startTestCase("CheckAddressPhone用例测试开始");
+		//预发布环境在表格的第二行
+		JSONObject jsonconfig = GetApi.configJson(2);
+		// 增加收货地址接口在表格的第三行
+		JSONObject jsonapi = GetApi.getApiJson(4);
 		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("addressBuildingId", "259");
+		jsonParam.put("addressBuildingId", "350");
 		jsonParam.put("addressNaviId", "18039");
-		jsonParam.put("building", "南区美庐园B栋");
+		jsonParam.put("building", "自动化测试楼栋（勿删）");
 		jsonParam.put("city1", "深圳");
 		jsonParam.put("contact", name);
 		jsonParam.put("gender", "0");
@@ -33,10 +36,10 @@ public class CheckAddressPhone {
 		jsonParam.put("regionId", "813395");
 		jsonParam.put("room1", "11111A");
 		jsonParam.put("village", "东角山");
-		String respondresult = HttpClientMethod.postJson(GetExcelData.getHost(), GetExcelData.getApi(), GetExcelData.getRegion(), Login.getToken(GetExcelData.getPhone(), GetExcelData.getCode(),GetExcelData.getIntroducerCode())
-, jsonParam);
-		Assert.assertTrue(respondresult.contains(re));*/
-        Log.endTestCase("CheckAddressPhone用例测试结束");
+		String respondresult = HttpClientMethod.postJson(jsonconfig.getString("host"), jsonapi.getString("apiurl"),
+				jsonconfig.getString("region"), Login.getToken(), jsonParam);
+		Assert.assertTrue(respondresult.contains(re));
+		Log.endTestCase("CheckAddressPhone用例测试结束");
 	}
 
 	@BeforeClass

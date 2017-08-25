@@ -4,8 +4,8 @@
 	<test name="api">
 		<classes>
 			<!-- <class name="com.zzkg.cases.cart.CheckCart" /> -->
-	<!-- <class name="com.zzkg.cases.addaddress.CheckAddressPhone" /> -->
-			<class name="com.zzkg.cases.gift.ExchangeGift" />
+	<class name="com.zzkg.cases.addaddress.CheckAddressPhone" />
+			<!-- <class name="com.zzkg.cases.gift.ExchangeGift" /> -->
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

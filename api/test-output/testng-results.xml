@@ -1,45 +1,924 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="43" passed="43">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2427" started-at="2017-08-24T15:27:25Z" finished-at="2017-08-24T15:27:27Z">
+  <suite name="Suite" duration-ms="17585" started-at="2017-08-25T08:24:53Z" finished-at="2017-08-25T08:25:11Z">
     <groups>
     </groups>
-    <test name="api" duration-ms="2427" started-at="2017-08-24T15:27:25Z" finished-at="2017-08-24T15:27:27Z">
-      <class name="com.zzkg.cases.gift.ExchangeGift">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="beforeClass" is-config="true" duration-ms="53" started-at="2017-08-24T23:27:25Z" finished-at="2017-08-24T23:27:25Z">
+    <test name="api" duration-ms="17585" started-at="2017-08-25T08:24:53Z" finished-at="2017-08-25T08:25:11Z">
+      <class name="com.zzkg.cases.addaddress.CheckAddressPhone">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="beforeClass" is-config="true" duration-ms="64" started-at="2017-08-25T16:24:53Z" finished-at="2017-08-25T16:24:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="1060" started-at="2017-08-24T23:27:25Z" finished-at="2017-08-24T23:27:26Z">
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="769" started-at="2017-08-25T16:24:54Z" data-provider="phone" finished-at="2017-08-25T16:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷134]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13414672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="negativeNumber()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="negativeNumber" duration-ms="434" started-at="2017-08-24T23:27:26Z" finished-at="2017-08-24T23:27:27Z">
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="434" started-at="2017-08-25T16:24:55Z" data-provider="phone" finished-at="2017-08-25T16:24:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷135]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13514672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- negativeNumber -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-08-24T23:27:27Z" finished-at="2017-08-24T23:27:27Z">
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="418" started-at="2017-08-25T16:24:55Z" data-provider="phone" finished-at="2017-08-25T16:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷136]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="428" started-at="2017-08-24T23:27:27Z" finished-at="2017-08-24T23:27:27Z">
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="401" started-at="2017-08-25T16:24:56Z" data-provider="phone" finished-at="2017-08-25T16:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷137]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13714672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="zeroNumber()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="zeroNumber" duration-ms="430" started-at="2017-08-24T23:27:27Z" finished-at="2017-08-24T23:27:27Z">
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="375" started-at="2017-08-25T16:24:56Z" data-provider="phone" finished-at="2017-08-25T16:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷138]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- zeroNumber -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="afterClass" is-config="true" duration-ms="1" started-at="2017-08-24T23:27:27Z" finished-at="2017-08-24T23:27:27Z">
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="427" started-at="2017-08-25T16:24:56Z" data-provider="phone" finished-at="2017-08-25T16:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷139]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13914672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="417" started-at="2017-08-25T16:24:57Z" data-provider="phone" finished-at="2017-08-25T16:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷150]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15014672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="405" started-at="2017-08-25T16:24:57Z" data-provider="phone" finished-at="2017-08-25T16:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷151]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15114672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="419" started-at="2017-08-25T16:24:58Z" data-provider="phone" finished-at="2017-08-25T16:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷152]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15214672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="367" started-at="2017-08-25T16:24:58Z" data-provider="phone" finished-at="2017-08-25T16:24:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷157]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15714672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="412" started-at="2017-08-25T16:24:58Z" data-provider="phone" finished-at="2017-08-25T16:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷158]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="382" started-at="2017-08-25T16:24:59Z" data-provider="phone" finished-at="2017-08-25T16:24:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷159]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15914672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="411" started-at="2017-08-25T16:24:59Z" data-provider="phone" finished-at="2017-08-25T16:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷182]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18224672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="407" started-at="2017-08-25T16:25:00Z" data-provider="phone" finished-at="2017-08-25T16:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷183]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18314672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="376" started-at="2017-08-25T16:25:00Z" data-provider="phone" finished-at="2017-08-25T16:25:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷184]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18414672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="387" started-at="2017-08-25T16:25:00Z" data-provider="phone" finished-at="2017-08-25T16:25:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷187]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18714672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="396" started-at="2017-08-25T16:25:01Z" data-provider="phone" finished-at="2017-08-25T16:25:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷188]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="359" started-at="2017-08-25T16:25:01Z" data-provider="phone" finished-at="2017-08-25T16:25:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷147]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14714672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="368" started-at="2017-08-25T16:25:02Z" data-provider="phone" finished-at="2017-08-25T16:25:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷178]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="388" started-at="2017-08-25T16:25:02Z" data-provider="phone" finished-at="2017-08-25T16:25:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷130]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13014672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="372" started-at="2017-08-25T16:25:02Z" data-provider="phone" finished-at="2017-08-25T16:25:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷131]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13114672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="370" started-at="2017-08-25T16:25:03Z" data-provider="phone" finished-at="2017-08-25T16:25:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷132]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13214672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="362" started-at="2017-08-25T16:25:03Z" data-provider="phone" finished-at="2017-08-25T16:25:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷155]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15514672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="365" started-at="2017-08-25T16:25:03Z" data-provider="phone" finished-at="2017-08-25T16:25:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷156]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="386" started-at="2017-08-25T16:25:04Z" data-provider="phone" finished-at="2017-08-25T16:25:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷185]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18514672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="358" started-at="2017-08-25T16:25:04Z" data-provider="phone" finished-at="2017-08-25T16:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷186]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="383" started-at="2017-08-25T16:25:05Z" data-provider="phone" finished-at="2017-08-25T16:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷145]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14514672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="365" started-at="2017-08-25T16:25:05Z" data-provider="phone" finished-at="2017-08-25T16:25:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷175]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17514672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="388" started-at="2017-08-25T16:25:05Z" data-provider="phone" finished-at="2017-08-25T16:25:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷176]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="411" started-at="2017-08-25T16:25:06Z" data-provider="phone" finished-at="2017-08-25T16:25:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷133]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13314672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="361" started-at="2017-08-25T16:25:06Z" data-provider="phone" finished-at="2017-08-25T16:25:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷153]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[15314672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="402" started-at="2017-08-25T16:25:07Z" data-provider="phone" finished-at="2017-08-25T16:25:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷180]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18014672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="369" started-at="2017-08-25T16:25:07Z" data-provider="phone" finished-at="2017-08-25T16:25:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷181]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18114672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="371" started-at="2017-08-25T16:25:07Z" data-provider="phone" finished-at="2017-08-25T16:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷189]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18914672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="348" started-at="2017-08-25T16:25:08Z" data-provider="phone" finished-at="2017-08-25T16:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷177]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17714672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="359" started-at="2017-08-25T16:25:08Z" data-provider="phone" finished-at="2017-08-25T16:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷173]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17314672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="354" started-at="2017-08-25T16:25:08Z" data-provider="phone" finished-at="2017-08-25T16:25:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷170]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17014672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="398" started-at="2017-08-25T16:25:09Z" data-provider="phone" finished-at="2017-08-25T16:25:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷171]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[17114672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="412" started-at="2017-08-25T16:25:09Z" data-provider="phone" finished-at="2017-08-25T16:25:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷198]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[19814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="375" started-at="2017-08-25T16:25:10Z" data-provider="phone" finished-at="2017-08-25T16:25:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷199]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[19914672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="372" started-at="2017-08-25T16:25:10Z" data-provider="phone" finished-at="2017-08-25T16:25:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷166]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[16614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="361" started-at="2017-08-25T16:25:10Z" data-provider="phone" finished-at="2017-08-25T16:25:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷146]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14614672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="addAddress(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="addAddress" duration-ms="391" started-at="2017-08-25T16:25:11Z" data-provider="phone" finished-at="2017-08-25T16:25:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[大爷148]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[14814672775]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.CheckAddressPhone@55f3ddb1]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-25T16:25:11Z" finished-at="2017-08-25T16:25:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@8bd1b6a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-08-24T23:27:27Z" finished-at="2017-08-24T23:27:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.zzkg.cases.gift.ExchangeGift -->
+      </class> <!-- com.zzkg.cases.addaddress.CheckAddressPhone -->
     </test> <!-- api -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -9,7 +9,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import datapro.GetApi;
 import net.sf.json.JSONObject;
 
 public class Login {
@@ -19,7 +18,7 @@ public class Login {
 		// 预发布环境在表格的第二行
 		JSONObject jsonconfig = GetApi.configJson(2);
 		//登录接口在表格的第一行
-		JSONObject jsonapi = GetApi.getJsonApi(1);
+		JSONObject jsonapi = GetApi.getApiJson(1);
 		JSONObject jsonParam = new JSONObject();
 		jsonParam.put("phone", jsonconfig.getString("phone"));
 		jsonParam.put("code", jsonconfig.getString("code"));

@@ -16,6 +16,7 @@ import org.apache.http.util.EntityUtils;
 import net.sf.json.JSONObject;
 
 public class HttpClientMethod {
+	//put方法传入json body
 	public static String putJson(String host, String path, String region, String token, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用putJson++++++++++++++++++++++");
@@ -40,6 +41,7 @@ public class HttpClientMethod {
 		return strResult;	
 	}
 	
+	//get方法
 	public static String get(String host, String path, String region, String token)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用get++++++++++++++++++++++");
@@ -60,6 +62,7 @@ public class HttpClientMethod {
 		return strResult;
 	}
 	
+	//post方法传入json body 获取token
 	public static String postJsonToken(String host, String path, String region, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJsonToken++++++++++++++++++++++");
@@ -82,6 +85,7 @@ public class HttpClientMethod {
 		return strResult;
 	}
 	
+	//post方法传入json body
 	public static String postJson(String host, String path, String region, String token, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJson++++++++++++++++++++++");
@@ -106,6 +110,7 @@ public class HttpClientMethod {
 		return strResult;
 	}
 	
+	//delete方法
 	public static String delete(String host, String path, String region, String token)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用delete++++++++++++++++++++++");

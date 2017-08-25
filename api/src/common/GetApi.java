@@ -1,8 +1,7 @@
-package datapro;
+package common;
 
 import java.io.IOException;
 
-import common.ReadExcel;
 import net.sf.json.JSONObject;
 
 public class GetApi {
@@ -20,7 +19,7 @@ public class GetApi {
 	}
 	
 	//将测试接口路径转化为json数据
-	public static JSONObject getJsonApi(int apirow) throws IOException {
+	public static JSONObject getApiJson(int apirow) throws IOException {
 		String[] initdata = ReadExcel.getApi(
 				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\initExcel\\", "api.xlsx", "api",
 				apirow);
