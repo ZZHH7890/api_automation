@@ -7,6 +7,7 @@ import common.HttpClientMethod;
 import common.InitEnv;
 import common.Log;
 import common.Login;
+import datapro.ExchangeGiftPro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -19,60 +20,26 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 
 public class ExchangeGift {
-	@Test(enabled = true)
-	public void negativeNumber() throws ClientProtocolException, IOException {
-		Log.startTestCase("negativeNumber用例测试开始");
-		// 表格中预发布环境在表格的第二行
+	@Test(enabled = true, dataProvider = "exchangeGift", dataProviderClass = ExchangeGiftPro.class, priority = 1)
+	public void exchangeGift(String dealCount, String dealId, String selected, String expectValue)
+			throws ClientProtocolException, IOException {
+		Log.startTestCase("exchangeGift用例测试开始");
+		// 读取表格config.xlsx的第二行预发布环境信息
 		JSONObject jsonconfig = GetApi.configJson(2);
-		// 表格中兑换赠品接口在表格的第三行
+		// 读取表格api.xlsx的第三行兑换赠品接口信息
 		JSONObject jsonapi = GetApi.getApiJson(3);
+		//设置put方法的传入Body Data
 		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", "-3");
-		// 自动化测试赠品1
-		jsonParam.put("dealId", "994140");
-		jsonParam.put("selected", "true");
+		jsonParam.put("dealCount", dealCount);
+		jsonParam.put("dealId", dealId);
+		jsonParam.put("selected", selected);
+		//执行接口请求并获取接口返回的string结果
 		String respondresult = HttpClientMethod.putJson(jsonconfig.getString("host"), jsonapi.getString("apiurl"),
 				jsonconfig.getString("region"), Login.getToken(), jsonParam);
-		Assert.assertTrue(respondresult.contains("购买数量不能为负数"));
-		Log.endTestCase("negativeNumber用例测试结束");
+		Assert.assertTrue(respondresult.contains(expectValue));
+		Log.endTestCase("exchangeGift用例测试结束");
 	}
 
-	@Test(enabled = true)
-	public void zeroNumber() throws ClientProtocolException, IOException {
-		Log.startTestCase("zeroNumber用例测试开始");
-		// 表格中预发布环境在表格的第二行
-		JSONObject jsonconfig = GetApi.configJson(2);
-		// 表格中兑换赠品接口在表格的第三行
-		JSONObject jsonapi = GetApi.getApiJson(3);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", "0");
-		// 自动化测试赠品1
-		jsonParam.put("dealId", "994140");
-		jsonParam.put("selected", "true");
-		String respondresult = HttpClientMethod.putJson(jsonconfig.getString("host"), jsonapi.getString("apiurl"),
-				jsonconfig.getString("region"), Login.getToken(), jsonParam);
-		Assert.assertTrue(respondresult.contains("兑换成功"));
-		Log.endTestCase("zeroNumber用例测试结束");
-	}
-	
-	@Test(enabled = true)
-	public void twoNumber() throws ClientProtocolException, IOException {
-		Log.startTestCase("zeroNumber用例测试开始");
-		// 表格中预发布环境在表格的第二行
-		JSONObject jsonconfig = GetApi.configJson(2);
-		// 表格中兑换赠品接口在表格的第三行
-		JSONObject jsonapi = GetApi.getApiJson(3);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", "2");
-		// 自动化测试赠品1
-		jsonParam.put("dealId", "994140");
-		jsonParam.put("selected", "true");
-		String respondresult = HttpClientMethod.putJson(jsonconfig.getString("host"), jsonapi.getString("apiurl"),
-				jsonconfig.getString("region"), Login.getToken(), jsonParam);
-		Assert.assertTrue(respondresult.contains("兑换成功"));
-		Log.endTestCase("zeroNumber用例测试结束");
-	}
-	
 
 	@BeforeMethod
 	public void beforeMethod() throws ClientProtocolException, IOException {
@@ -88,6 +55,7 @@ public class ExchangeGift {
 	@BeforeClass
 	public void beforeClass() {
 		System.out.println("测试开始！！");
+		//设置打印日志的配置信息
 		DOMConfigurator.configure("log4j.xml");
 	}
 

@@ -58,13 +58,13 @@ public class ReadExcel {
 		Workbook workbook = new XSSFWorkbook(inputStream);
 		Sheet sheet = workbook.getSheet(sheetname);
 		// 获取表格表头信息
-		Row headerrow = sheet.getRow(configrow-1);
+		Row headerrow = sheet.getRow(0);
 		String headerrowfields[] = new String[headerrow.getLastCellNum()];
 		for (int k = 0; k < headerrow.getLastCellNum(); k++) {
 			headerrowfields[k] = headerrow.getCell(k).getStringCellValue();
 		}
 		// 获取服务器、社区、用户、验证码、推荐码信息
-		Row row = sheet.getRow(1);
+		Row row = sheet.getRow(configrow-1);
 		String fields[] = new String[row.getLastCellNum()];
 		for (int j = 0; j < row.getLastCellNum(); j++) {
 			if (row.getCell(j) != null) {
@@ -93,7 +93,7 @@ public class ReadExcel {
 				fields[j] = row.getCell(j).getStringCellValue();
 			}
 		}
-		Log.info(fields[0] + ": " + fields[1] + "在表格的第" + apirow + "行");
+		Log.info(fields[0] + ": " + fields[1] + "，在表格的第" + apirow + "行");
 		workbook.close();
 		Log.info("=========================接口信息读取结束=========================");
 		return fields;
