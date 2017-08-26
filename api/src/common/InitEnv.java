@@ -8,6 +8,7 @@ import net.sf.json.JSONObject;
 
 public class InitEnv {
 	public static void clearCart() throws ClientProtocolException, IOException {
+		Log.info("清空购物车");
 		// 读取表格config.xlsx的第二行预发布环境信息
 		JSONObject jsonconfig = GetApi.configJson(2);
 		// 读取表格api.xlsx的第二行清空购物车接口信息
@@ -17,5 +18,4 @@ public class InitEnv {
 				jsonconfig.getString("region"), Login.getToken());
 		System.out.println("清空购物车成功:" + result);
 	}
-
 }

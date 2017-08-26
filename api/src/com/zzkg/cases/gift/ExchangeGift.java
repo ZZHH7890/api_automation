@@ -40,10 +40,8 @@ public class ExchangeGift {
 		Log.endTestCase("exchangeGiftÓÃÀı²âÊÔ½áÊø");
 	}
 
-
 	@BeforeMethod
 	public void beforeMethod() throws ClientProtocolException, IOException {
-		System.out.println("beforeTest");
 		InitEnv.clearCart();
 	}
 

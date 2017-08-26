@@ -1,0 +1,855 @@
+2017-08-26 11:27:28,615 INFO  [Log] 清空购物车 
+2017-08-26 11:27:28,617 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 11:27:28,617 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 11:27:28,617 INFO  [Log] 读取sheet: config 
+2017-08-26 11:27:29,054 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,055 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,056 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 11:27:29,056 INFO  [Log] 登陆验证码：1234 
+2017-08-26 11:27:29,056 INFO  [Log] 推荐码：13714672774 
+2017-08-26 11:27:29,057 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 11:27:29,116 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 11:27:29,117 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 11:27:29,117 INFO  [Log] 读取sheet: api 
+2017-08-26 11:27:29,140 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 11:27:29,141 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 11:27:29,142 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 11:27:29,142 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 11:27:29,142 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 11:27:29,142 INFO  [Log] 读取sheet: config 
+2017-08-26 11:27:29,160 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,161 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,161 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 11:27:29,161 INFO  [Log] 登陆验证码：1234 
+2017-08-26 11:27:29,161 INFO  [Log] 推荐码：13714672774 
+2017-08-26 11:27:29,161 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 11:27:29,161 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 11:27:29,161 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 11:27:29,162 INFO  [Log] 读取sheet: api 
+2017-08-26 11:27:29,178 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 11:27:29,178 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 11:27:29,181 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 11:27:29,350 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,350 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 11:27:29,350 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,351 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 11:27:29,751 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"2ef35602-2247-4190-afb6-b295b5019e0b","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"a-0914-742","newUser":false,"success":true} 
+2017-08-26 11:27:29,752 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 11:27:29,754 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 11:27:29,754 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 11:27:29,761 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,761 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 11:27:29,761 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,761 INFO  [Log] 用户登录token:2ef35602-2247-4190-afb6-b295b5019e0b 
+2017-08-26 11:27:29,810 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 11:27:29,810 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 11:27:29,818 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 11:27:29,818 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 11:27:29,818 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 11:27:29,818 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 11:27:29,818 INFO  [Log] 读取sheet: config 
+2017-08-26 11:27:29,839 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,839 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,839 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 11:27:29,840 INFO  [Log] 登陆验证码：1234 
+2017-08-26 11:27:29,840 INFO  [Log] 推荐码：13714672774 
+2017-08-26 11:27:29,840 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 11:27:29,840 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 11:27:29,840 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 11:27:29,840 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 11:27:29,840 INFO  [Log] 读取sheet: config 
+2017-08-26 11:27:29,860 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,860 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,861 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 11:27:29,861 INFO  [Log] 登陆验证码：1234 
+2017-08-26 11:27:29,861 INFO  [Log] 推荐码：13714672774 
+2017-08-26 11:27:29,861 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 11:27:29,861 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 11:27:29,861 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 11:27:29,861 INFO  [Log] 读取sheet: api 
+2017-08-26 11:27:29,879 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 11:27:29,879 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 11:27:29,879 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 11:27:29,882 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:29,882 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 11:27:29,882 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:29,883 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 11:27:30,178 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"219828d7-8ce5-4bab-9939-a6c2b4c7575f","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"9-bab4-5ec","newUser":false,"success":true} 
+2017-08-26 11:27:30,179 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 11:27:30,179 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 11:27:30,179 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 11:27:30,179 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 11:27:30,179 INFO  [Log] 读取sheet: api 
+2017-08-26 11:27:30,211 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 11:27:30,211 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 11:27:30,212 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 11:27:30,214 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:30,214 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 11:27:30,214 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:30,214 INFO  [Log] 用户登录token:219828d7-8ce5-4bab-9939-a6c2b4c7575f 
+2017-08-26 11:27:30,214 INFO  [Log] 测试接口的传入json数据：{"dealId":"994141","dealCount":"1","selected":"true"} 
+2017-08-26 11:27:30,272 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"兑换成功","data":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":2,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":2,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9960,"accountPoint":9980},"success":true} 
+2017-08-26 11:27:30,272 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 11:27:30,272 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 11:27:30,272 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 11:27:30,272 INFO  [Log] 读取sheet: api 
+2017-08-26 11:27:30,283 INFO  [Log] 获取订单确认信息: /ja/user/v3/od/cart/order，在表格的第7行 
+2017-08-26 11:27:30,283 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 11:27:30,283 INFO  [Log] +++++++++++++++++开始调用get++++++++++++++++++++++ 
+2017-08-26 11:27:30,285 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 11:27:30,285 INFO  [Log] 测试接口：/ja/user/v3/od/cart/order 
+2017-08-26 11:27:30,285 INFO  [Log] 测试社区：813395 
+2017-08-26 11:27:30,285 INFO  [Log] 用户登录token:219828d7-8ce5-4bab-9939-a6c2b4c7575f 
+2017-08-26 11:27:30,380 INFO  [Log] 测试接口返回:{"orderAmount":{"dealAmount":0.0,"usePoints":false,"piontsAmount":0.0,"useBalance":false,"currentBalance":0.0,"balanceAmount":0.0,"expressFee":5.0,"useShippingFreeCoupon":0.0,"payAmount":5.0,"hasPreBuy":false,"dealCounts":0,"useCouponAmount":0.0,"deliverType":-1},"myActiveCouponCount":0,"deliverytimes":[{"name":"14:00-15:00"},{"name":"15:00-16:00"},{"name":"18:00-19:00"}],"pickupModel":0,"dealers":[],"cartGiftInfo":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":2,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":2,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9960,"accountPoint":9980,"deliverType":"猪猪配送"},"currentUseCouponType":-1,"deliverPoint":{"contact":"张化大爷","contact_tel":"15814982522","address":"木屋烧烤在兴东还是在西丽还是在福田还是在罗湖还是在北京还是在宝安还是在广西还是在广州还是在深圳深圳","regionId":813395},"cartDealers":[],"cartToken":"2050bbdb-e918-4da3-90e5-2ebe0b325952","activieExpressFreeCouponCount":0,"deliverType":-1} 
+2017-08-26 11:27:30,380 INFO  [Log] +++++++++++++++++结束调用get++++++++++++++++++++++ 
+2017-08-26 11:27:30,395 INFO  [Log] ***********************exchangeGift用例测试结束************************* 
+2017-08-26 11:27:30,395 INFO  [Log] ---------------------------------------------------------------- 
+2017-08-26 17:55:20,321 INFO  [Log] =========================表格测试数据读取开始========================= 
+2017-08-26 17:55:20,321 INFO  [Log] 测试数据表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\testDataExcel\ExchangeGift.xlsx 
+2017-08-26 17:55:20,736 INFO  [Log] dealCount（兑换赠品数量）：-3 
+2017-08-26 17:55:20,736 INFO  [Log] dealId（赠品id）：994140 
+2017-08-26 17:55:20,736 INFO  [Log] selected(勾选状态)：true 
+2017-08-26 17:55:20,737 INFO  [Log] 期望值：购买数量不能为负数 
+2017-08-26 17:55:20,737 INFO  [Log] dealCount（兑换赠品数量）：0 
+2017-08-26 17:55:20,737 INFO  [Log] dealId（赠品id）：994140 
+2017-08-26 17:55:20,737 INFO  [Log] selected(勾选状态)：true 
+2017-08-26 17:55:20,738 INFO  [Log] 期望值：购买数量不能为0 
+2017-08-26 17:55:20,739 INFO  [Log] dealCount（兑换赠品数量）：2 
+2017-08-26 17:55:20,739 INFO  [Log] dealId（赠品id）：994140 
+2017-08-26 17:55:20,739 INFO  [Log] selected(勾选状态)：true 
+2017-08-26 17:55:20,740 INFO  [Log] 期望值：兑换成功 
+2017-08-26 17:55:20,741 INFO  [Log] dealCount（兑换赠品数量）：1 
+2017-08-26 17:55:20,741 INFO  [Log] dealId（赠品id）：994136 
+2017-08-26 17:55:20,741 INFO  [Log] selected(勾选状态)：true 
+2017-08-26 17:55:20,741 INFO  [Log] 期望值：没有足够的积分 
+2017-08-26 17:55:20,741 INFO  [Log] dealCount（兑换赠品数量）：5 
+2017-08-26 17:55:20,742 INFO  [Log] dealId（赠品id）：994141 
+2017-08-26 17:55:20,742 INFO  [Log] selected(勾选状态)：true 
+2017-08-26 17:55:20,742 INFO  [Log] 期望值：没有足够的库存 
+2017-08-26 17:55:20,743 INFO  [Log] =========================表格测试数据读取结束========================= 
+2017-08-26 17:55:20,745 INFO  [Log] 清空购物车 
+2017-08-26 17:55:20,745 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:20,745 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:20,745 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:20,770 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:20,770 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:20,771 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:20,771 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:20,771 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:20,771 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:20,804 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:20,804 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:20,804 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:20,825 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 17:55:20,825 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:20,826 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:20,826 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:20,826 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:20,826 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:20,843 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:20,844 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:20,844 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:20,845 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:20,845 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:20,845 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:20,845 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:20,846 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:20,848 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:20,864 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:20,864 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:20,867 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:21,047 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,047 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:21,048 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,048 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:21,443 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"0e1ef583-99c5-471d-b901-e5e5b0b2a6fa","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"b-d174-5c9","newUser":false,"success":true} 
+2017-08-26 17:55:21,443 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:21,444 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:21,445 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:21,448 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,448 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 17:55:21,448 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,448 INFO  [Log] 用户登录token:0e1ef583-99c5-471d-b901-e5e5b0b2a6fa 
+2017-08-26 17:55:21,505 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 17:55:21,505 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:21,506 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 17:55:21,506 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 17:55:21,506 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:21,506 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:21,506 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:21,537 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,537 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,537 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:21,537 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:21,537 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:21,537 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:21,537 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:21,537 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:21,537 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:21,579 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 17:55:21,579 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:21,580 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:21,580 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:21,580 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:21,581 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:21,610 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,610 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,610 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:21,610 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:21,610 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:21,610 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:21,610 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:21,610 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:21,610 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:21,640 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:21,640 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:21,641 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:21,645 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,646 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:21,646 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,646 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:21,935 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"64378d00-408a-471e-9e34-bae04b1c0a7d","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"9-e174-a80","newUser":false,"success":true} 
+2017-08-26 17:55:21,935 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:21,935 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:21,935 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:21,937 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:21,937 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 17:55:21,937 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:21,937 INFO  [Log] 用户登录token:64378d00-408a-471e-9e34-bae04b1c0a7d 
+2017-08-26 17:55:21,937 INFO  [Log] 测试接口的传入json数据：{"dealId":"994140","dealCount":"-3","selected":"true"} 
+2017-08-26 17:55:22,002 INFO  [Log] 测试接口返回:{"statusCode":14,"msg":"购买数量不能为负数","success":false} 
+2017-08-26 17:55:22,003 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:22,004 INFO  [Log] ***********************exchangeGift用例测试结束************************* 
+2017-08-26 17:55:22,004 INFO  [Log] ---------------------------------------------------------------- 
+2017-08-26 17:55:22,005 INFO  [Log] 清空购物车 
+2017-08-26 17:55:22,005 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,005 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,005 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,038 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,038 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,038 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,038 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,038 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,038 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,038 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,038 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,038 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,049 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 17:55:22,050 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,050 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:22,050 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,050 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,050 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,063 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,063 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,063 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,063 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,063 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,063 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,063 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,063 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,063 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,074 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:22,074 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,074 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:22,075 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,075 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:22,076 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,076 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:22,360 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"a036c4cf-c070-4874-a166-858b9565adca","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"a-4784-070","newUser":false,"success":true} 
+2017-08-26 17:55:22,361 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:22,361 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:22,361 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:22,363 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,363 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 17:55:22,363 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,363 INFO  [Log] 用户登录token:a036c4cf-c070-4874-a166-858b9565adca 
+2017-08-26 17:55:22,400 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 17:55:22,400 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:22,400 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 17:55:22,400 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 17:55:22,400 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,400 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,400 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,409 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,410 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,410 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,410 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,410 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,410 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,410 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,410 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,410 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,419 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 17:55:22,419 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,420 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:22,420 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,420 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,420 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,442 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,442 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,442 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,442 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,442 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,442 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,442 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,442 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,442 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,452 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:22,452 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,452 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:22,457 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,457 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:22,457 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,457 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:22,754 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"7974da10-b1f4-4cf8-a061-89d55de9be5a","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"a-8fc4-4f1","newUser":false,"success":true} 
+2017-08-26 17:55:22,754 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:22,754 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:22,755 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:22,756 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,756 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 17:55:22,756 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,756 INFO  [Log] 用户登录token:7974da10-b1f4-4cf8-a061-89d55de9be5a 
+2017-08-26 17:55:22,756 INFO  [Log] 测试接口的传入json数据：{"dealId":"994140","dealCount":"0","selected":"true"} 
+2017-08-26 17:55:22,815 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"兑换成功","data":{"giftDeals":[{"deal":{"deal_id":994140,"name":"自动化测试赠品1","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!thumbnail","score":4.0,"cc":3,"goode":2,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!big","button_name":"售罄","store":100000,"limit":0,"origin":"","specs":[{"id":926446,"price":0.0,"stock":100000,"desc":"145G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960525,"categoryId":195,"realName":"自动化测试赠品1","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6901070602795","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":0,"unitPoint":50,"totalPoint":0,"hasStore":true,"selected":true}],"totalPointInCart":0,"payPoint":0,"giftDealCount":0,"availablePoint":9980,"accountPoint":9980},"success":true} 
+2017-08-26 17:55:22,815 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:22,816 INFO  [Log] 清空购物车 
+2017-08-26 17:55:22,816 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,816 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,816 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,824 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,824 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,824 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,824 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,824 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,824 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,824 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,824 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,824 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,833 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 17:55:22,833 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,833 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:22,833 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:22,833 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:22,833 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:22,840 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,840 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,840 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:22,840 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:22,841 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:22,841 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:22,841 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:22,841 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:22,841 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:22,848 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:22,848 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:22,848 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:22,894 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:22,894 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:22,894 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:22,895 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:23,190 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"32f027f4-b9ff-40af-b3f0-3977510fb17f","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"b-fa04-ff9","newUser":false,"success":true} 
+2017-08-26 17:55:23,190 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:23,191 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:23,191 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:23,191 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,191 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 17:55:23,191 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,193 INFO  [Log] 用户登录token:32f027f4-b9ff-40af-b3f0-3977510fb17f 
+2017-08-26 17:55:23,243 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 17:55:23,243 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:23,244 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 17:55:23,244 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 17:55:23,244 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:23,244 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:23,244 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:23,252 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,252 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,252 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:23,252 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:23,252 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:23,252 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:23,252 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:23,252 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:23,252 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:23,259 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 17:55:23,260 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:23,260 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:23,260 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:23,260 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:23,260 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:23,268 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,268 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,268 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:23,268 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:23,268 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:23,268 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:23,268 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:23,268 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:23,268 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:23,275 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:23,275 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:23,275 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:23,276 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,277 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:23,277 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,277 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:23,573 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"0bc2ab16-4e4e-434d-9bd2-c42422cfc8ca","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"9-d434-e4e","newUser":false,"success":true} 
+2017-08-26 17:55:23,573 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:23,573 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:23,573 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:23,575 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,575 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 17:55:23,575 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,575 INFO  [Log] 用户登录token:0bc2ab16-4e4e-434d-9bd2-c42422cfc8ca 
+2017-08-26 17:55:23,575 INFO  [Log] 测试接口的传入json数据：{"dealId":"994140","dealCount":"2","selected":"true"} 
+2017-08-26 17:55:23,633 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"兑换成功","data":{"giftDeals":[{"deal":{"deal_id":994140,"name":"自动化测试赠品1","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!thumbnail","score":4.0,"cc":3,"goode":2,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!big","button_name":"售罄","store":100000,"limit":0,"origin":"","specs":[{"id":926446,"price":0.0,"stock":100000,"desc":"145G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960525,"categoryId":195,"realName":"自动化测试赠品1","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6901070602795","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204612.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":2,"unitPoint":50,"totalPoint":40,"hasStore":true,"selected":true}],"totalPointInCart":40,"payPoint":40,"giftDealCount":2,"availablePoint":9940,"accountPoint":9980},"success":true} 
+2017-08-26 17:55:23,634 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:23,634 INFO  [Log] ***********************exchangeGift用例测试结束************************* 
+2017-08-26 17:55:23,634 INFO  [Log] ---------------------------------------------------------------- 
+2017-08-26 17:55:23,634 INFO  [Log] 清空购物车 
+2017-08-26 17:55:23,634 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:23,634 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:23,634 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:23,642 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,642 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,642 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:23,642 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:23,642 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:23,642 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:23,643 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:23,643 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:23,643 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:23,650 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 17:55:23,650 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:23,650 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:23,650 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:23,650 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:23,650 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:23,658 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,658 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,659 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:23,659 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:23,659 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:23,659 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:23,659 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:23,659 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:23,659 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:23,666 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:23,713 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:23,713 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:23,715 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:23,715 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:23,715 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:23,715 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:24,028 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"1cae3c9b-9d1c-474c-91bc-963a2e9c8f33","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"9-c474-c1d","newUser":false,"success":true} 
+2017-08-26 17:55:24,028 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,028 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:24,028 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:24,030 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,030 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 17:55:24,030 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,030 INFO  [Log] 用户登录token:1cae3c9b-9d1c-474c-91bc-963a2e9c8f33 
+2017-08-26 17:55:24,078 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 17:55:24,078 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:24,078 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 17:55:24,079 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 17:55:24,079 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,079 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,079 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,086 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,086 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,086 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,086 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,086 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,086 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,086 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,086 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,086 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,092 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 17:55:24,092 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,092 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:24,092 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,092 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,092 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,100 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,100 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,100 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,100 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,100 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,100 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,100 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,100 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,100 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,131 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:24,132 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,132 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,134 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,134 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:24,134 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,134 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:24,426 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"9b8592ec-0b0d-4edc-82e4-a1ca8b89e004","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"8-cde4-d0b","newUser":false,"success":true} 
+2017-08-26 17:55:24,426 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,426 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:24,426 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:24,429 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,429 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 17:55:24,429 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,429 INFO  [Log] 用户登录token:9b8592ec-0b0d-4edc-82e4-a1ca8b89e004 
+2017-08-26 17:55:24,429 INFO  [Log] 测试接口的传入json数据：{"dealId":"994136","dealCount":"1","selected":"true"} 
+2017-08-26 17:55:24,473 INFO  [Log] 测试接口返回:{"statusCode":12,"msg":"没有足够的积分","success":false} 
+2017-08-26 17:55:24,473 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:24,473 INFO  [Log] ***********************exchangeGift用例测试结束************************* 
+2017-08-26 17:55:24,473 INFO  [Log] ---------------------------------------------------------------- 
+2017-08-26 17:55:24,474 INFO  [Log] 清空购物车 
+2017-08-26 17:55:24,474 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,474 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,474 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,480 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,481 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,481 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,481 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,481 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,481 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,481 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,481 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,481 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,487 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 17:55:24,487 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,487 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:24,487 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,487 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,487 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,493 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,493 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,493 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,493 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,493 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,493 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,493 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,493 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,493 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,499 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:24,499 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,499 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,501 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,501 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:24,501 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,501 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:24,784 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"3e3058e1-bafe-44fb-ba8b-b3fc608c0447","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"b-bf44-efa","newUser":false,"success":true} 
+2017-08-26 17:55:24,784 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,784 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:24,784 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:24,786 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,786 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 17:55:24,786 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,786 INFO  [Log] 用户登录token:3e3058e1-bafe-44fb-ba8b-b3fc608c0447 
+2017-08-26 17:55:24,823 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 17:55:24,823 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 17:55:24,823 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 17:55:24,823 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 17:55:24,823 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,823 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,823 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,830 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,830 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,830 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,830 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,830 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,830 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,830 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,830 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,830 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,837 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 17:55:24,837 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,837 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 17:55:24,837 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 17:55:24,837 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 17:55:24,837 INFO  [Log] 读取sheet: config 
+2017-08-26 17:55:24,843 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,843 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,843 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 17:55:24,843 INFO  [Log] 登陆验证码：1234 
+2017-08-26 17:55:24,843 INFO  [Log] 推荐码：13714672774 
+2017-08-26 17:55:24,843 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 17:55:24,843 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 17:55:24,843 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 17:55:24,843 INFO  [Log] 读取sheet: api 
+2017-08-26 17:55:24,865 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 17:55:24,865 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 17:55:24,865 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:24,867 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:24,867 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 17:55:24,867 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:24,867 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 17:55:25,164 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"1296e678-5c19-4d83-bf4b-dc89c4fd91e4","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"b-38d4-91c","newUser":false,"success":true} 
+2017-08-26 17:55:25,164 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 17:55:25,164 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 17:55:25,164 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:25,166 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 17:55:25,166 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 17:55:25,166 INFO  [Log] 测试社区：813395 
+2017-08-26 17:55:25,166 INFO  [Log] 用户登录token:1296e678-5c19-4d83-bf4b-dc89c4fd91e4 
+2017-08-26 17:55:25,166 INFO  [Log] 测试接口的传入json数据：{"dealId":"994141","dealCount":"5","selected":"true"} 
+2017-08-26 17:55:25,218 INFO  [Log] 测试接口返回:{"statusCode":2,"msg":"没有足够的库存","success":false} 
+2017-08-26 17:55:25,218 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 17:55:25,218 INFO  [Log] ***********************exchangeGift用例测试结束************************* 
+2017-08-26 17:55:25,218 INFO  [Log] ---------------------------------------------------------------- 
+2017-08-26 18:03:00,173 INFO  [Log] 清空购物车 
+2017-08-26 18:03:00,175 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:03:00,175 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:03:00,175 INFO  [Log] 读取sheet: config 
+2017-08-26 18:03:00,595 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:00,596 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:00,597 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:03:00,598 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:03:00,598 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:03:00,599 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:03:00,659 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:00,659 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:00,659 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:00,683 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 18:03:00,683 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:00,684 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 18:03:00,684 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:03:00,684 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:03:00,684 INFO  [Log] 读取sheet: config 
+2017-08-26 18:03:00,703 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:00,703 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:00,703 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:03:00,703 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:03:00,703 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:03:00,704 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:03:00,704 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:00,704 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:00,704 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:00,722 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 18:03:00,722 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:00,725 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:03:00,906 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:00,907 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 18:03:00,907 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:00,907 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 18:03:01,279 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"79fd324d-af32-48aa-b8b5-0e338bf02ed0","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"b-aa84-23f","newUser":false,"success":true} 
+2017-08-26 18:03:01,279 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:03:01,280 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 18:03:01,281 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 18:03:01,283 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,283 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 18:03:01,283 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,283 INFO  [Log] 用户登录token:79fd324d-af32-48aa-b8b5-0e338bf02ed0 
+2017-08-26 18:03:01,321 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 18:03:01,321 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 18:03:01,325 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 18:03:01,325 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 18:03:01,326 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:03:01,326 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:03:01,326 INFO  [Log] 读取sheet: config 
+2017-08-26 18:03:01,342 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,342 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,342 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:03:01,342 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:03:01,342 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:03:01,342 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:03:01,343 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 18:03:01,343 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:03:01,343 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:03:01,343 INFO  [Log] 读取sheet: config 
+2017-08-26 18:03:01,356 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,358 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,359 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:03:01,359 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:03:01,359 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:03:01,359 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:03:01,359 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:01,360 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:01,360 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:01,377 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 18:03:01,377 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:01,377 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:03:01,379 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,379 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 18:03:01,379 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,379 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 18:03:01,704 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"e99c5f96-19b2-4085-8a51-e926a87fd532","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"8-5804-2b9","newUser":false,"success":true} 
+2017-08-26 18:03:01,704 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:03:01,704 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 18:03:01,704 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:01,704 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:01,704 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:01,716 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 18:03:01,716 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:01,716 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 18:03:01,719 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,719 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 18:03:01,719 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,719 INFO  [Log] 用户登录token:e99c5f96-19b2-4085-8a51-e926a87fd532 
+2017-08-26 18:03:01,719 INFO  [Log] 测试接口的传入json数据：{"dealId":"994141","dealCount":"1","selected":"true"} 
+2017-08-26 18:03:01,778 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"兑换成功","data":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":2,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":2,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9960,"accountPoint":9980},"success":true} 
+2017-08-26 18:03:01,779 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 18:03:01,779 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:01,779 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:01,779 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:01,793 INFO  [Log] 获取订单确认信息接口: /ja/user/v3/od/cart/order，在表格的第7行 
+2017-08-26 18:03:01,793 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:01,793 INFO  [Log] +++++++++++++++++开始调用get++++++++++++++++++++++ 
+2017-08-26 18:03:01,796 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,796 INFO  [Log] 测试接口：/ja/user/v3/od/cart/order 
+2017-08-26 18:03:01,796 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,796 INFO  [Log] 用户登录token:e99c5f96-19b2-4085-8a51-e926a87fd532 
+2017-08-26 18:03:01,891 INFO  [Log] 测试接口返回:{"orderAmount":{"dealAmount":0.0,"usePoints":false,"piontsAmount":0.0,"useBalance":false,"currentBalance":0.0,"balanceAmount":0.0,"expressFee":5.0,"useShippingFreeCoupon":0.0,"payAmount":5.0,"hasPreBuy":false,"dealCounts":0,"useCouponAmount":0.0,"deliverType":-1},"myActiveCouponCount":0,"deliverytimes":[{"name":"14:00-15:00"},{"name":"15:00-16:00"},{"name":"18:00-19:00"}],"pickupModel":0,"dealers":[],"cartGiftInfo":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":2,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":2,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9960,"accountPoint":9980,"deliverType":"猪猪配送"},"currentUseCouponType":-1,"deliverPoint":{"contact":"张化大爷","contact_tel":"15814982522","address":"木屋烧烤在兴东还是在西丽还是在福田还是在罗湖还是在北京还是在宝安还是在广西还是在广州还是在深圳深圳","regionId":813395},"cartDealers":[],"cartToken":"d6769342-651d-4b22-95fe-5b4650f71196","activieExpressFreeCouponCount":0,"deliverType":-1} 
+2017-08-26 18:03:01,892 INFO  [Log] +++++++++++++++++结束调用get++++++++++++++++++++++ 
+2017-08-26 18:03:01,901 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:01,901 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:01,901 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:01,931 INFO  [Log] 下单接口: /ja/user/v3/od/order，在表格的第8行 
+2017-08-26 18:03:01,931 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:01,931 INFO  [Log] +++++++++++++++++开始调用postJson++++++++++++++++++++++ 
+2017-08-26 18:03:01,933 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:01,933 INFO  [Log] 测试接口：/ja/user/v3/od/order 
+2017-08-26 18:03:01,933 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:01,933 INFO  [Log] 用户登录token:e99c5f96-19b2-4085-8a51-e926a87fd532 
+2017-08-26 18:03:01,933 INFO  [Log] 测试接口的传入json数据：{"buyWay":"1","remark":"","serviceReminderFlag":"2","cartToken":"d6769342-651d-4b22-95fe-5b4650f71196","delivertime":"06:00-07:30","addressId":"15830","deliverType":"-1"} 
+2017-08-26 18:03:02,123 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"订单提交成功","id":74881,"payAmount":"5.0","endPayTimePoint":"2017-08-26 19:03:42","payBufferTime":8,"success":true} 
+2017-08-26 18:03:02,123 INFO  [Log] +++++++++++++++++结束调用postJson++++++++++++++++++++++ 
+2017-08-26 18:03:02,124 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:03:02,124 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:03:02,124 INFO  [Log] 读取sheet: api 
+2017-08-26 18:03:02,135 INFO  [Log] 获取预支付订单: /ja/memberbao/v1/pay/balance/appidzzkg9021v754d/order/，在表格的第9行 
+2017-08-26 18:03:02,135 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:03:02,135 INFO  [Log] +++++++++++++++++开始调用get++++++++++++++++++++++ 
+2017-08-26 18:03:02,138 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:03:02,138 INFO  [Log] 测试接口：/ja/memberbao/v1/pay/balance/appidzzkg9021v754d/order/74881//5.0//e99c5f96-19b2-4085-8a51-e926a87fd532 
+2017-08-26 18:03:02,138 INFO  [Log] 测试社区：813395 
+2017-08-26 18:03:02,138 INFO  [Log] 用户登录token:e99c5f96-19b2-4085-8a51-e926a87fd532 
+2017-08-26 18:03:02,273 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"获取预支付订单成功","data":{"prepayId":"0000002818"}} 
+2017-08-26 18:03:02,273 INFO  [Log] +++++++++++++++++结束调用get++++++++++++++++++++++ 
+2017-08-26 18:05:45,565 INFO  [Log] 清空购物车 
+2017-08-26 18:05:45,566 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:05:45,566 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:05:45,566 INFO  [Log] 读取sheet: config 
+2017-08-26 18:05:45,995 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:45,995 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:45,996 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:05:45,996 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:05:45,996 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:05:45,997 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:05:46,058 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:46,058 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:46,058 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:46,085 INFO  [Log] 清空购物车接口: /ja/user/v3/od/clear/cart，在表格的第2行 
+2017-08-26 18:05:46,085 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:46,086 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 18:05:46,086 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:05:46,086 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:05:46,086 INFO  [Log] 读取sheet: config 
+2017-08-26 18:05:46,104 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,104 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,104 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:05:46,104 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:05:46,104 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:05:46,104 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:05:46,105 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:46,105 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:46,105 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:46,123 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 18:05:46,123 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:46,127 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:05:46,308 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,308 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 18:05:46,308 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,309 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 18:05:46,644 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"c913e78e-30dc-443a-a77b-397bae19a970","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"a-a344-cd0","newUser":false,"success":true} 
+2017-08-26 18:05:46,645 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:05:46,646 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 18:05:46,646 INFO  [Log] +++++++++++++++++开始调用delete++++++++++++++++++++++ 
+2017-08-26 18:05:46,649 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,649 INFO  [Log] 测试接口：/ja/user/v3/od/clear/cart 
+2017-08-26 18:05:46,649 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,649 INFO  [Log] 用户登录token:c913e78e-30dc-443a-a77b-397bae19a970 
+2017-08-26 18:05:46,685 INFO  [Log] 测试接口返回:{"statusCode":0,"cart":{"cartDealers":[],"cartDealPromotions":[],"cartMyCoupons":[],"totalPriceInCart":0.0,"dealPromotionAmount":0.0,"couponAmount":0.0,"payAmount":0.0,"expressFee":0.0,"dealCounts":0,"hasPreBuy":false,"hasNonePreBuy":false,"selected":true,"hasGiftGroup":0,"hasCrossBorderEcommerce":false},"success":true} 
+2017-08-26 18:05:46,685 INFO  [Log] +++++++++++++++++结束调用delete++++++++++++++++++++++ 
+2017-08-26 18:05:46,689 INFO  [Log] --------------------------------------------------------------- 
+2017-08-26 18:05:46,689 INFO  [Log] ***********************exchangeGift用例测试开始*********************** 
+2017-08-26 18:05:46,690 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:05:46,690 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:05:46,690 INFO  [Log] 读取sheet: config 
+2017-08-26 18:05:46,710 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,710 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,710 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:05:46,710 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:05:46,710 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:05:46,710 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:05:46,710 INFO  [Log] +++++++++++++++++开始调用Login获取token++++++++++++++++++++++ 
+2017-08-26 18:05:46,710 INFO  [Log] =========================测试环境数据读取开始========================= 
+2017-08-26 18:05:46,711 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\config.xlsx 
+2017-08-26 18:05:46,711 INFO  [Log] 读取sheet: config 
+2017-08-26 18:05:46,725 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,725 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,725 INFO  [Log] 登录手机号码：13714672776 
+2017-08-26 18:05:46,725 INFO  [Log] 登陆验证码：1234 
+2017-08-26 18:05:46,725 INFO  [Log] 推荐码：13714672774 
+2017-08-26 18:05:46,725 INFO  [Log] =========================测试环境数据读取结束========================= 
+2017-08-26 18:05:46,726 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:46,726 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:46,726 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:46,741 INFO  [Log] 登录接口: /v2/regist/code，在表格的第1行 
+2017-08-26 18:05:46,741 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:46,741 INFO  [Log] +++++++++++++++++开始调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:05:46,743 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:46,743 INFO  [Log] 测试接口：/v2/regist/code 
+2017-08-26 18:05:46,743 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:46,743 INFO  [Log] 测试接口的传入json数据：{"introducerCode":"13714672774","code":"1234","phone":"13714672776"} 
+2017-08-26 18:05:47,027 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"登录成功","id":"73993","type":0,"token":"9f7799c5-36e3-48fe-949b-ffe3a6ef0875","expiresIn":21600,"openId":"00046e4077b75f803de6a6d28bbf5b7e","pass":"9-ef84-3e6","newUser":false,"success":true} 
+2017-08-26 18:05:47,027 INFO  [Log] +++++++++++++++++结束调用postJsonToken++++++++++++++++++++++ 
+2017-08-26 18:05:47,027 INFO  [Log] +++++++++++++++++结束调用Login++++++++++++++++++++++ 
+2017-08-26 18:05:47,027 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:47,027 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:47,027 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:47,042 INFO  [Log] 兑换赠品接口: /ja/user/v3/od/giftdeal/exchange，在表格的第3行 
+2017-08-26 18:05:47,042 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:47,042 INFO  [Log] +++++++++++++++++开始调用putJson++++++++++++++++++++++ 
+2017-08-26 18:05:47,044 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:47,044 INFO  [Log] 测试接口：/ja/user/v3/od/giftdeal/exchange 
+2017-08-26 18:05:47,044 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:47,044 INFO  [Log] 用户登录token:9f7799c5-36e3-48fe-949b-ffe3a6ef0875 
+2017-08-26 18:05:47,044 INFO  [Log] 测试接口的传入json数据：{"dealId":"994141","dealCount":"1","selected":"true"} 
+2017-08-26 18:05:47,097 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"兑换成功","data":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":1,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":1,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9940,"accountPoint":9960},"success":true} 
+2017-08-26 18:05:47,097 INFO  [Log] +++++++++++++++++结束调用putJson++++++++++++++++++++++ 
+2017-08-26 18:05:47,097 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:47,097 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:47,098 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:47,113 INFO  [Log] 获取订单确认信息接口: /ja/user/v3/od/cart/order，在表格的第7行 
+2017-08-26 18:05:47,113 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:47,113 INFO  [Log] +++++++++++++++++开始调用get++++++++++++++++++++++ 
+2017-08-26 18:05:47,115 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:47,115 INFO  [Log] 测试接口：/ja/user/v3/od/cart/order 
+2017-08-26 18:05:47,115 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:47,115 INFO  [Log] 用户登录token:9f7799c5-36e3-48fe-949b-ffe3a6ef0875 
+2017-08-26 18:05:47,219 INFO  [Log] 测试接口返回:{"orderAmount":{"dealAmount":0.0,"usePoints":false,"piontsAmount":0.0,"useBalance":false,"currentBalance":0.0,"balanceAmount":0.0,"expressFee":5.0,"useShippingFreeCoupon":0.0,"payAmount":5.0,"hasPreBuy":false,"dealCounts":0,"useCouponAmount":0.0,"deliverType":-1},"myActiveCouponCount":0,"deliverytimes":[{"name":"14:00-15:00"},{"name":"15:00-16:00"},{"name":"18:00-19:00"}],"pickupModel":0,"dealers":[],"cartGiftInfo":{"giftDeals":[{"deal":{"deal_id":994141,"name":"自动化测试赠品2","dealType":0,"dealerId":950673,"dealerName":"张化测试小店（东角山）","marketUnitPrice":0.0,"unitPrice":0.0,"unit":"14","giftUnitPrice":0.0,"desc":"","sold":0,"img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","score":4.8,"cc":5,"goode":5,"bad":0,"general":0,"big_img":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!big","button_name":"售罄","store":1,"limit":0,"origin":"自动化测试库存不足","comm":"自动化测试库存不足","specs":[{"id":926447,"price":0.0,"stock":1,"desc":"100G","purchaseCount":0,"priceText":"0.00","skillPrice":0.0,"skillPriceText":"0.00"}],"expressFee":0.0,"activity_id":0,"deal_deal_id":960526,"categoryId":195,"realName":"自动化测试赠品2","marketUnitPriceText":"0.00","unitPriceText":"0.00","giftUnitPriceText":"0.00","isSeckillRemind":false,"barcode":"6902088603712","dealerOpenStatus":1,"odLabelId":"11","dealStatusImg":"","odOpenStatus":1,"type":0,"unitPoint":50,"promotionPoint":20,"sellingPrice":0.0,"bundleCount":0,"activityPrice":0.0,"url":"http://release-image.thy360.com/images/deal/20151105/D204617.jpg!thumbnail","gift":true,"fee":0.0,"bundle":false},"count":1,"unitPoint":50,"totalPoint":20,"hasStore":true,"selected":true}],"totalPointInCart":20,"payPoint":20,"giftDealCount":1,"availablePoint":9940,"accountPoint":9960,"deliverType":"猪猪配送"},"currentUseCouponType":-1,"deliverPoint":{"contact":"张化大爷","contact_tel":"15814982522","address":"木屋烧烤在兴东还是在西丽还是在福田还是在罗湖还是在北京还是在宝安还是在广西还是在广州还是在深圳深圳","regionId":813395},"cartDealers":[],"cartToken":"6dab1954-f674-4ebd-bd30-dce8bc140a0e","activieExpressFreeCouponCount":0,"deliverType":-1} 
+2017-08-26 18:05:47,219 INFO  [Log] +++++++++++++++++结束调用get++++++++++++++++++++++ 
+2017-08-26 18:05:47,228 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:47,228 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:47,228 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:47,242 INFO  [Log] 下单接口: /ja/user/v3/od/order，在表格的第8行 
+2017-08-26 18:05:47,242 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:47,242 INFO  [Log] +++++++++++++++++开始调用postJson++++++++++++++++++++++ 
+2017-08-26 18:05:47,245 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:47,245 INFO  [Log] 测试接口：/ja/user/v3/od/order 
+2017-08-26 18:05:47,245 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:47,245 INFO  [Log] 用户登录token:9f7799c5-36e3-48fe-949b-ffe3a6ef0875 
+2017-08-26 18:05:47,245 INFO  [Log] 测试接口的传入json数据：{"buyWay":"1","remark":"","serviceReminderFlag":"2","cartToken":"6dab1954-f674-4ebd-bd30-dce8bc140a0e","delivertime":"06:00-07:30","addressId":"15830","deliverType":"-1"} 
+2017-08-26 18:05:47,408 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"订单提交成功","id":74882,"payAmount":"5.0","endPayTimePoint":"2017-08-26 19:06:27","payBufferTime":8,"success":true} 
+2017-08-26 18:05:47,408 INFO  [Log] +++++++++++++++++结束调用postJson++++++++++++++++++++++ 
+2017-08-26 18:05:47,408 INFO  [Log] =========================接口信息读取开始========================= 
+2017-08-26 18:05:47,408 INFO  [Log] 配置文件表格：C:\Users\Administrator\eclipse-workspace\api_automation\api\initExcel\api.xlsx 
+2017-08-26 18:05:47,409 INFO  [Log] 读取sheet: api 
+2017-08-26 18:05:47,420 INFO  [Log] 获取预支付订单: /ja/memberbao/v1/pay/balance/appidzzkg9021v754d/order/，在表格的第9行 
+2017-08-26 18:05:47,420 INFO  [Log] =========================接口信息读取结束========================= 
+2017-08-26 18:05:47,420 INFO  [Log] +++++++++++++++++开始调用get++++++++++++++++++++++ 
+2017-08-26 18:05:47,424 INFO  [Log] 测试服务器：http://release.thy360.com 
+2017-08-26 18:05:47,424 INFO  [Log] 测试接口：/ja/memberbao/v1/pay/balance/appidzzkg9021v754d/order/74882//5.0//9f7799c5-36e3-48fe-949b-ffe3a6ef0875 
+2017-08-26 18:05:47,424 INFO  [Log] 测试社区：813395 
+2017-08-26 18:05:47,424 INFO  [Log] 用户登录token:9f7799c5-36e3-48fe-949b-ffe3a6ef0875 
+2017-08-26 18:05:47,566 INFO  [Log] 测试接口返回:{"statusCode":0,"msg":"获取预支付订单成功","data":{"prepayId":"0000002819"}} 
+2017-08-26 18:05:47,567 INFO  [Log] +++++++++++++++++结束调用get++++++++++++++++++++++ 
