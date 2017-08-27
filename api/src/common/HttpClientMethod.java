@@ -95,6 +95,8 @@ public class HttpClientMethod {
 		httppost.setHeader("Content-Type", "application/json");
 		httppost.setHeader("region", region);
 		httppost.setHeader("token", token);
+		//会员宝支付需要的appId
+		httppost.setHeader("appId","appidzzkg9021v754d");
 		Log.info("测试服务器：" + host);
 		Log.info("测试接口：" + path);
 		Log.info("测试社区：" + region);

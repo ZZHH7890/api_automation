@@ -3,15 +3,27 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test name="api(failed)">
     <classes>
-      <class name="test.DebugTestNG">
+      <class name="com.zzkg.cases.addaddress.AddAddress">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.zzkg.cases.addaddress.AddAddress -->
+      <class name="com.zzkg.cases.buy.BuyProcess">
         <methods>
           <include name="afterClass"/>
-          <include name="exchangeGift"/>
           <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- test.DebugTestNG -->
+      </class> <!-- com.zzkg.cases.buy.BuyProcess -->
+      <class name="com.zzkg.cases.gift.ExchangeGift">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="exchangeGift" invocation-numbers="1"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.zzkg.cases.gift.ExchangeGift -->
     </classes>
   </test> <!-- api(failed) -->
 </suite> <!-- Failed suite [Suite] -->

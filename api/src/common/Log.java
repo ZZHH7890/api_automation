@@ -5,13 +5,13 @@ import org.apache.log4j.Logger;
 public class Log {
 	private static Logger log = Logger.getLogger(Log.class.getName());
 	public static void startTestCase(String startTestCase) {
-		log.info("---------------------------------------------------------------");
+		log.info("-------------------------------------------------------------------------------------------");
 		log.info("***********************"+startTestCase+"***********************");
 	}
 	
 	public static void endTestCase(String endTestCase) {
 		log.info("***********************"+endTestCase+ "*************************");
-		log.info("----------------------------------------------------------------");
+		log.info("-------------------------------------------------------------------------------------------");
 	}
 
 	public static void info(String message) {

@@ -8,7 +8,7 @@ public class GetApi {
 	//将初始化数据转化为json数据
 	public static JSONObject configJson(int configrow) throws IOException {
 		String[] initdata = ReadExcel.getConfigData(
-				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\initExcel\\", "config.xlsx", "config", configrow);
+				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\ExcelForData\\", "testData.xlsx", "config", configrow);
 		JSONObject jsonconfig = new JSONObject();
 		jsonconfig.put("host", initdata[0]);
 		jsonconfig.put("region", initdata[1]);
@@ -21,7 +21,7 @@ public class GetApi {
 	//将测试接口路径转化为json数据
 	public static JSONObject getApiJson(int apirow) throws IOException {
 		String[] initdata = ReadExcel.getApi(
-				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\initExcel\\", "api.xlsx", "api",
+				"C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\ExcelForData\\", "testData.xlsx", "api",
 				apirow);
 		JSONObject jsonapi = new JSONObject();
 		jsonapi.put("apiname", initdata[0]);

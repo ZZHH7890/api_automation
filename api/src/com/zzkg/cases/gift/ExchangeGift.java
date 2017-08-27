@@ -2,6 +2,8 @@ package com.zzkg.cases.gift;
 
 import org.testng.annotations.Test;
 
+import com.zzkg.japi.JavaApi;
+
 import common.GetApi;
 import common.HttpClientMethod;
 import common.InitEnv;
@@ -11,6 +13,8 @@ import datapro.ExchangeGiftPro;
 import net.sf.json.JSONObject;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
 import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
@@ -18,24 +22,16 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 
 public class ExchangeGift {
+	//测试兑换赠品接口
 	@Test(enabled = true, dataProvider = "exchangeGift", dataProviderClass = ExchangeGiftPro.class, priority = 1)
 	public void exchangeGift(String dealCount, String dealId, String selected, String expectValue)
 			throws ClientProtocolException, IOException {
 		Log.startTestCase("exchangeGift用例测试开始");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonconfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第三行兑换赠品接口信息
-		JSONObject jsonapi = GetApi.getApiJson(3);
-		//设置put方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", dealCount);
-		jsonParam.put("dealId", dealId);
-		jsonParam.put("selected", selected);
-		//执行接口请求并获取接口返回的string结果
-		String respondresult = HttpClientMethod.putJson(jsonconfig.getString("host"), jsonapi.getString("apiurl"),
-				jsonconfig.getString("region"), Login.getToken(), jsonParam);
+		// 执行兑换赠品接口
+		String respondresult = JavaApi.exchangeGift(dealCount, dealId, selected);
 		Assert.assertTrue(respondresult.contains(expectValue));
 		Log.endTestCase("exchangeGift用例测试结束");
 	}
@@ -46,20 +42,23 @@ public class ExchangeGift {
 	}
 
 	@AfterMethod
-	public void afterMethod() {
-		System.out.println("afterTest");
+	public void afterMethod() throws ClientProtocolException, IOException {
+		InitEnv.clearCart();
 	}
 
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("测试开始！！");
-		//设置打印日志的配置信息
 		DOMConfigurator.configure("log4j.xml");
+		Log.startTestCase("ExchangeGift用例测试开始");
+		
+
 	}
 
 	@AfterClass
 	public void afterClass() {
-		System.out.println("测试结束！！");
+		Log.endTestCase("ExchangeGift用例测试结束");
 	}
+
+	
 
 }

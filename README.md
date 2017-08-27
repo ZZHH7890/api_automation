@@ -27,4 +27,6 @@ commons-logging.jar
 ezmorph-1.0.3.jar
 json-lib-2.1-jdk15.jar
 
-6.操作excel表的poi-3.11包
+6.操作excel表的poi-3.11包，包括lib文件夹，ooxml-lib文件夹，还有poi-3.11文件夹下所有jar文件
+
+
