@@ -35,7 +35,7 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用购买商品接口++++++++++++++++++++++");
 			return responseString;
 		} catch (Exception e) {
-			String failString = "购买商品接口执行失败！！";
+			String failString = "接口执行失败，添加商品失败！！";
 			Log.info(failString);
 			return failString;
 		}
@@ -66,7 +66,6 @@ public class JavaApi {
 			Log.info(failString);
 			return failString;
 		}
-
 	}
 
 	// 增加收货地址接口
@@ -99,7 +98,7 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用增加地址接口++++++++++++++++++++++");
 			return responseString;
 		} catch (Exception e) {
-			String failString = "增加收货地址接口执行失败！！";
+			String failString = "接口执行失败，增加收货地址失败！！";
 			Log.info(failString);
 			return failString;
 		}
@@ -123,7 +122,7 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用获取收货地址id信息接口++++++++++++++++++++++");
 			return addressId;
 		} catch (Exception e) {
-			String failString = "获取收货地址id信息失败！！";
+			String failString = "接口执行失败，获取收货地址id信息失败！！";
 			Log.info(failString);
 			return failString;
 		}
@@ -146,7 +145,7 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用订单确认信息接口++++++++++++++++++++++");
 			return cartToken;
 		} catch (Exception e) {
-			String failString = "调用订单确认信息接口失败，获取cartToken失败！！";
+			String failString = "接口执行失败，获取cartToken失败！！";
 			Log.info(failString);
 			return failString;
 		}
@@ -189,7 +188,6 @@ public class JavaApi {
 			Log.info(orderInfo[1]);
 			return orderInfo;
 		}
-
 	}
 
 	// 执行获取预支付订单接口
@@ -213,11 +211,10 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用获取预支付订单接口++++++++++++++++++++++");
 			return prepayOrderId;
 		} catch (Exception e) {
-			String failString = "调用获取预支付订单接口失败，获取prepayOrderId失败！！";
+			String failString = "接口执行失败，获取prepayOrderId失败！！";
 			Log.info(failString);
 			return failString;
 		}
-
 	}
 
 	// 执行会员宝支付接口
@@ -237,7 +234,7 @@ public class JavaApi {
 			Log.info("+++++++++++++++++结束调用会员宝支付接口++++++++++++++++++++++");
 			return responseString;
 		} catch (Exception e) {
-			String failString = "调用会员宝支付接口失败，支付失败！！";
+			String failString = "接口执行失败，支付失败！！";
 			Log.info(failString);
 			return failString;
 		}

@@ -29,11 +29,9 @@ public class ExchangeGift {
 	@Test(enabled = true, dataProvider = "exchangeGift", dataProviderClass = ExchangeGiftPro.class, priority = 1)
 	public void exchangeGift(String dealCount, String dealId, String selected, String expectValue)
 			throws ClientProtocolException, IOException {
-		Log.startTestCase("exchangeGift用例测试开始");
 		// 执行兑换赠品接口
 		String respondresult = JavaApi.exchangeGift(dealCount, dealId, selected);
 		Assert.assertTrue(respondresult.contains(expectValue));
-		Log.endTestCase("exchangeGift用例测试结束");
 	}
 
 	@BeforeMethod

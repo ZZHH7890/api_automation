@@ -35,8 +35,9 @@ public class ReadExcel {
 				if (row.getCell(j) != null) {
 					fields[j] = row.getCell(j).getStringCellValue();
 					Log.info(headerrowfields[j] + "：" + fields[j]);
-				}
+				}	
 			}
+			Log.info("--------------------第" + i + "组测试数据" + "--------------------");
 			records.add(fields);
 		}
 		Object[][] results = new Object[records.size()][];
@@ -48,12 +49,14 @@ public class ReadExcel {
 		return results;
 
 	}
-	//获取服务器、社区、用户、验证码、推荐码
-	public static String[] getConfigData(String filepath, String filename, String sheetname, int configrow) throws IOException {
+
+	// 获取服务器、社区、用户、验证码、推荐码
+	public static String[] getConfigData(String filepath, String filename, String sheetname, int configrow)
+			throws IOException {
 		Log.info("=========================测试环境数据读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
 		Log.info("配置文件表格：" + file.toString());
-		Log.info("读取sheet: "+ sheetname);
+		Log.info("读取sheet: " + sheetname);
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook workbook = new XSSFWorkbook(inputStream);
 		Sheet sheet = workbook.getSheet(sheetname);
@@ -64,7 +67,7 @@ public class ReadExcel {
 			headerrowfields[k] = headerrow.getCell(k).getStringCellValue();
 		}
 		// 获取服务器、社区、用户、验证码、推荐码信息
-		Row row = sheet.getRow(configrow-1);
+		Row row = sheet.getRow(configrow - 1);
 		String fields[] = new String[row.getLastCellNum()];
 		for (int j = 0; j < row.getLastCellNum(); j++) {
 			if (row.getCell(j) != null) {
@@ -76,17 +79,18 @@ public class ReadExcel {
 		Log.info("=========================测试环境数据读取结束=========================");
 		return fields;
 	}
+
 	// 获取接口信息
 	public static String[] getApi(String filepath, String filename, String sheetname, int apirow) throws IOException {
 		Log.info("=========================接口信息读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
 		Log.info("配置文件表格：" + file.toString());
-		Log.info("读取sheet: "+ sheetname);
+		Log.info("读取sheet: " + sheetname);
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook workbook = new XSSFWorkbook(inputStream);
 		Sheet sheet = workbook.getSheet(sheetname);
 		// 获取第apirow行接口信息
-		Row row = sheet.getRow(apirow-1);
+		Row row = sheet.getRow(apirow - 1);
 		String fields[] = new String[row.getLastCellNum()];
 		for (int j = 0; j < row.getLastCellNum(); j++) {
 			if (row.getCell(j) != null) {

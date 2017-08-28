@@ -33,7 +33,6 @@ public class ClearEnv {
 					JSONObject jsonDeleteAddressApi = GetApi.getApiJson(5);
 					String deleteAddressString = HttpClientMethod.delete(jsonconfig.getString("host"),
 							jsonDeleteAddressApi.getString("apiurl") + idString, jsonconfig.getString("region"), token);
-					System.out.println("…æ≥˝ ’ªıµÿ÷∑£∫" + deleteAddressString);
 				}
 			}
 		} catch (Exception e) {

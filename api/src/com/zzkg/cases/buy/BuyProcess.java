@@ -18,7 +18,6 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class BuyProcess {
-
 	//单独购买一个商品
 	@Test
 	public void oneGoodsInOrder() throws ClientProtocolException, IOException {
