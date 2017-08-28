@@ -14,7 +14,7 @@ import net.sf.json.JSONObject;
 public class JavaApi {
 	// 购买商品接口
 	public static String buyGoods(String dealCount, String dealId, String limitFlag, String odLabelId, String selected,
-			String specId) throws ClientProtocolException, IOException {
+			String specId) throws IOException {
 		Log.info("+++++++++++++++++开始调用购买商品接口++++++++++++++++++++++");
 		// 读取表格config.xlsx的第二行预发布环境信息
 		JSONObject jsonConfig = GetApi.configJson(2);

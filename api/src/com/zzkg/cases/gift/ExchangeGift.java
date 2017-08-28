@@ -50,8 +50,6 @@ public class ExchangeGift {
 	public void beforeClass() {
 		DOMConfigurator.configure("log4j.xml");
 		Log.startTestCase("ExchangeGiftÓÃÀı²âÊÔ¿ªÊ¼");
-		
-
 	}
 
 	@AfterClass

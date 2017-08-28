@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="52" passed="51">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="40267" started-at="2017-08-27T15:16:01Z" finished-at="2017-08-27T15:16:41Z">
+  <suite name="Suite" duration-ms="42847" started-at="2017-08-28T07:27:28Z" finished-at="2017-08-28T07:28:11Z">
     <groups>
     </groups>
-    <test name="api" duration-ms="40267" started-at="2017-08-27T15:16:01Z" finished-at="2017-08-27T15:16:41Z">
+    <test name="api" duration-ms="42847" started-at="2017-08-28T07:27:28Z" finished-at="2017-08-28T07:28:11Z">
       <class name="com.zzkg.cases.addaddress.AddAddress">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="beforeClass" is-config="true" duration-ms="47" started-at="2017-08-27T23:16:01Z" finished-at="2017-08-27T23:16:01Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="beforeClass" is-config="true" duration-ms="64" started-at="2017-08-28T15:27:28Z" finished-at="2017-08-28T15:27:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="750" started-at="2017-08-27T23:16:01Z" data-provider="phone" finished-at="2017-08-27T23:16:02Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="887" started-at="2017-08-28T15:27:28Z" data-provider="phone" finished-at="2017-08-28T15:27:29Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:02Z" data-provider="phone" finished-at="2017-08-27T23:16:02Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="512" started-at="2017-08-28T15:27:29Z" data-provider="phone" finished-at="2017-08-28T15:27:30Z">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:02Z" data-provider="phone" finished-at="2017-08-27T23:16:03Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="507" started-at="2017-08-28T15:27:30Z" data-provider="phone" finished-at="2017-08-28T15:27:30Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:03Z" data-provider="phone" finished-at="2017-08-27T23:16:03Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="626" started-at="2017-08-28T15:27:30Z" data-provider="phone" finished-at="2017-08-28T15:27:31Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +95,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="422" started-at="2017-08-27T23:16:03Z" data-provider="phone" finished-at="2017-08-27T23:16:04Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="480" started-at="2017-08-28T15:27:31Z" data-provider="phone" finished-at="2017-08-28T15:27:31Z">
           <params>
             <param index="0">
               <value>
@@ -116,7 +116,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="392" started-at="2017-08-27T23:16:04Z" data-provider="phone" finished-at="2017-08-27T23:16:04Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="418" started-at="2017-08-28T15:27:31Z" data-provider="phone" finished-at="2017-08-28T15:27:32Z">
           <params>
             <param index="0">
               <value>
@@ -137,7 +137,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="437" started-at="2017-08-27T23:16:04Z" data-provider="phone" finished-at="2017-08-27T23:16:05Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="426" started-at="2017-08-28T15:27:32Z" data-provider="phone" finished-at="2017-08-28T15:27:32Z">
           <params>
             <param index="0">
               <value>
@@ -158,7 +158,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:05Z" data-provider="phone" finished-at="2017-08-27T23:16:05Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="454" started-at="2017-08-28T15:27:32Z" data-provider="phone" finished-at="2017-08-28T15:27:33Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:05Z" data-provider="phone" finished-at="2017-08-27T23:16:05Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="463" started-at="2017-08-28T15:27:33Z" data-provider="phone" finished-at="2017-08-28T15:27:33Z">
           <params>
             <param index="0">
               <value>
@@ -200,7 +200,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:05Z" data-provider="phone" finished-at="2017-08-27T23:16:06Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="443" started-at="2017-08-28T15:27:33Z" data-provider="phone" finished-at="2017-08-28T15:27:34Z">
           <params>
             <param index="0">
               <value>
@@ -221,7 +221,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:06Z" data-provider="phone" finished-at="2017-08-27T23:16:06Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="443" started-at="2017-08-28T15:27:34Z" data-provider="phone" finished-at="2017-08-28T15:27:34Z">
           <params>
             <param index="0">
               <value>
@@ -242,7 +242,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="469" started-at="2017-08-27T23:16:06Z" data-provider="phone" finished-at="2017-08-27T23:16:07Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="418" started-at="2017-08-28T15:27:34Z" data-provider="phone" finished-at="2017-08-28T15:27:34Z">
           <params>
             <param index="0">
               <value>
@@ -263,7 +263,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:07Z" data-provider="phone" finished-at="2017-08-27T23:16:07Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="448" started-at="2017-08-28T15:27:34Z" data-provider="phone" finished-at="2017-08-28T15:27:35Z">
           <params>
             <param index="0">
               <value>
@@ -284,7 +284,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:07Z" data-provider="phone" finished-at="2017-08-27T23:16:08Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="408" started-at="2017-08-28T15:27:35Z" data-provider="phone" finished-at="2017-08-28T15:27:35Z">
           <params>
             <param index="0">
               <value>
@@ -305,7 +305,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:08Z" data-provider="phone" finished-at="2017-08-27T23:16:08Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="413" started-at="2017-08-28T15:27:35Z" data-provider="phone" finished-at="2017-08-28T15:27:36Z">
           <params>
             <param index="0">
               <value>
@@ -326,7 +326,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="360" started-at="2017-08-27T23:16:08Z" data-provider="phone" finished-at="2017-08-27T23:16:08Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="405" started-at="2017-08-28T15:27:36Z" data-provider="phone" finished-at="2017-08-28T15:27:36Z">
           <params>
             <param index="0">
               <value>
@@ -347,7 +347,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:08Z" data-provider="phone" finished-at="2017-08-27T23:16:09Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="410" started-at="2017-08-28T15:27:36Z" data-provider="phone" finished-at="2017-08-28T15:27:36Z">
           <params>
             <param index="0">
               <value>
@@ -368,7 +368,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="389" started-at="2017-08-27T23:16:09Z" data-provider="phone" finished-at="2017-08-27T23:16:09Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="426" started-at="2017-08-28T15:27:36Z" data-provider="phone" finished-at="2017-08-28T15:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -389,7 +389,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="391" started-at="2017-08-27T23:16:09Z" data-provider="phone" finished-at="2017-08-27T23:16:09Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="418" started-at="2017-08-28T15:27:37Z" data-provider="phone" finished-at="2017-08-28T15:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -410,7 +410,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="426" started-at="2017-08-27T23:16:09Z" data-provider="phone" finished-at="2017-08-27T23:16:10Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="399" started-at="2017-08-28T15:27:37Z" data-provider="phone" finished-at="2017-08-28T15:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -431,7 +431,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="352" started-at="2017-08-27T23:16:10Z" data-provider="phone" finished-at="2017-08-27T23:16:10Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="400" started-at="2017-08-28T15:27:38Z" data-provider="phone" finished-at="2017-08-28T15:27:38Z">
           <params>
             <param index="0">
               <value>
@@ -452,7 +452,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:10Z" data-provider="phone" finished-at="2017-08-27T23:16:11Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="412" started-at="2017-08-28T15:27:38Z" data-provider="phone" finished-at="2017-08-28T15:27:39Z">
           <params>
             <param index="0">
               <value>
@@ -473,7 +473,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="422" started-at="2017-08-27T23:16:11Z" data-provider="phone" finished-at="2017-08-27T23:16:11Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="422" started-at="2017-08-28T15:27:39Z" data-provider="phone" finished-at="2017-08-28T15:27:39Z">
           <params>
             <param index="0">
               <value>
@@ -494,7 +494,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="376" started-at="2017-08-27T23:16:11Z" data-provider="phone" finished-at="2017-08-27T23:16:11Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="404" started-at="2017-08-28T15:27:39Z" data-provider="phone" finished-at="2017-08-28T15:27:39Z">
           <params>
             <param index="0">
               <value>
@@ -515,7 +515,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:11Z" data-provider="phone" finished-at="2017-08-27T23:16:12Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="397" started-at="2017-08-28T15:27:39Z" data-provider="phone" finished-at="2017-08-28T15:27:40Z">
           <params>
             <param index="0">
               <value>
@@ -536,7 +536,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="359" started-at="2017-08-27T23:16:12Z" data-provider="phone" finished-at="2017-08-27T23:16:12Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-28T15:27:40Z" data-provider="phone" finished-at="2017-08-28T15:27:40Z">
           <params>
             <param index="0">
               <value>
@@ -557,7 +557,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="401" started-at="2017-08-27T23:16:12Z" data-provider="phone" finished-at="2017-08-27T23:16:13Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="444" started-at="2017-08-28T15:27:40Z" data-provider="phone" finished-at="2017-08-28T15:27:41Z">
           <params>
             <param index="0">
               <value>
@@ -578,7 +578,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="366" started-at="2017-08-27T23:16:13Z" data-provider="phone" finished-at="2017-08-27T23:16:13Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="393" started-at="2017-08-28T15:27:41Z" data-provider="phone" finished-at="2017-08-28T15:27:41Z">
           <params>
             <param index="0">
               <value>
@@ -599,7 +599,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="390" started-at="2017-08-27T23:16:13Z" data-provider="phone" finished-at="2017-08-27T23:16:13Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-28T15:27:41Z" data-provider="phone" finished-at="2017-08-28T15:27:41Z">
           <params>
             <param index="0">
               <value>
@@ -620,7 +620,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:13Z" data-provider="phone" finished-at="2017-08-27T23:16:14Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="469" started-at="2017-08-28T15:27:41Z" data-provider="phone" finished-at="2017-08-28T15:27:42Z">
           <params>
             <param index="0">
               <value>
@@ -641,7 +641,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="438" started-at="2017-08-27T23:16:14Z" data-provider="phone" finished-at="2017-08-27T23:16:14Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="439" started-at="2017-08-28T15:27:42Z" data-provider="phone" finished-at="2017-08-28T15:27:42Z">
           <params>
             <param index="0">
               <value>
@@ -662,7 +662,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="390" started-at="2017-08-27T23:16:14Z" data-provider="phone" finished-at="2017-08-27T23:16:15Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="425" started-at="2017-08-28T15:27:42Z" data-provider="phone" finished-at="2017-08-28T15:27:43Z">
           <params>
             <param index="0">
               <value>
@@ -683,7 +683,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="455" started-at="2017-08-27T23:16:15Z" data-provider="phone" finished-at="2017-08-27T23:16:15Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="393" started-at="2017-08-28T15:27:43Z" data-provider="phone" finished-at="2017-08-28T15:27:43Z">
           <params>
             <param index="0">
               <value>
@@ -704,7 +704,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="375" started-at="2017-08-27T23:16:15Z" data-provider="phone" finished-at="2017-08-27T23:16:15Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="417" started-at="2017-08-28T15:27:43Z" data-provider="phone" finished-at="2017-08-28T15:27:44Z">
           <params>
             <param index="0">
               <value>
@@ -725,7 +725,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="376" started-at="2017-08-27T23:16:15Z" data-provider="phone" finished-at="2017-08-27T23:16:16Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="415" started-at="2017-08-28T15:27:44Z" data-provider="phone" finished-at="2017-08-28T15:27:44Z">
           <params>
             <param index="0">
               <value>
@@ -746,7 +746,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="390" started-at="2017-08-27T23:16:16Z" data-provider="phone" finished-at="2017-08-27T23:16:16Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-28T15:27:44Z" data-provider="phone" finished-at="2017-08-28T15:27:44Z">
           <params>
             <param index="0">
               <value>
@@ -767,7 +767,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:16Z" data-provider="phone" finished-at="2017-08-27T23:16:17Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="392" started-at="2017-08-28T15:27:44Z" data-provider="phone" finished-at="2017-08-28T15:27:45Z">
           <params>
             <param index="0">
               <value>
@@ -788,7 +788,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="411" started-at="2017-08-27T23:16:17Z" data-provider="phone" finished-at="2017-08-27T23:16:17Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="397" started-at="2017-08-28T15:27:45Z" data-provider="phone" finished-at="2017-08-28T15:27:45Z">
           <params>
             <param index="0">
               <value>
@@ -809,7 +809,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="396" started-at="2017-08-27T23:16:17Z" data-provider="phone" finished-at="2017-08-27T23:16:17Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="397" started-at="2017-08-28T15:27:45Z" data-provider="phone" finished-at="2017-08-28T15:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -830,7 +830,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="386" started-at="2017-08-27T23:16:17Z" data-provider="phone" finished-at="2017-08-27T23:16:18Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="441" started-at="2017-08-28T15:27:46Z" data-provider="phone" finished-at="2017-08-28T15:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -851,7 +851,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="403" started-at="2017-08-27T23:16:18Z" data-provider="phone" finished-at="2017-08-27T23:16:18Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="448" started-at="2017-08-28T15:27:46Z" data-provider="phone" finished-at="2017-08-28T15:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -872,7 +872,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="406" started-at="2017-08-27T23:16:18Z" data-provider="phone" finished-at="2017-08-27T23:16:19Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="459" started-at="2017-08-28T15:27:46Z" data-provider="phone" finished-at="2017-08-28T15:27:47Z">
           <params>
             <param index="0">
               <value>
@@ -893,7 +893,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="347" started-at="2017-08-27T23:16:19Z" data-provider="phone" finished-at="2017-08-27T23:16:19Z">
+        <test-method status="PASS" signature="checkAddressPhone(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="checkAddressPhone" duration-ms="386" started-at="2017-08-28T15:27:47Z" data-provider="phone" finished-at="2017-08-28T15:27:47Z">
           <params>
             <param index="0">
               <value>
@@ -914,47 +914,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddressPhone -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="afterClass" is-config="true" duration-ms="2635" started-at="2017-08-27T23:16:19Z" finished-at="2017-08-27T23:16:22Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@77f03bb1]" name="afterClass" is-config="true" duration-ms="2780" started-at="2017-08-28T15:27:47Z" finished-at="2017-08-28T15:27:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.zzkg.cases.addaddress.AddAddress -->
       <class name="com.zzkg.cases.buy.BuyProcess">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="beforeClass" is-config="true" duration-ms="458" started-at="2017-08-27T23:16:28Z" finished-at="2017-08-27T23:16:28Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="beforeClass" is-config="true" duration-ms="462" started-at="2017-08-28T15:27:56Z" finished-at="2017-08-28T15:27:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="oneGiftInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="oneGiftInOrder" duration-ms="3017" started-at="2017-08-27T23:16:28Z" finished-at="2017-08-27T23:16:31Z">
+        <test-method status="PASS" signature="oneGiftInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="oneGiftInOrder" duration-ms="3878" started-at="2017-08-28T15:27:57Z" finished-at="2017-08-28T15:28:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneGiftInOrder -->
-        <test-method status="PASS" signature="oneGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="oneGoodsInOrder" duration-ms="2923" started-at="2017-08-27T23:16:31Z" finished-at="2017-08-27T23:16:34Z">
+        <test-method status="PASS" signature="oneGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="oneGoodsInOrder" duration-ms="2862" started-at="2017-08-28T15:28:01Z" finished-at="2017-08-28T15:28:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- oneGoodsInOrder -->
-        <test-method status="PASS" signature="twoDifferentGiftsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="twoDifferentGiftsInOrder" duration-ms="3462" started-at="2017-08-27T23:16:34Z" finished-at="2017-08-27T23:16:37Z">
+        <test-method status="PASS" signature="twoDifferentGiftsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="twoDifferentGiftsInOrder" duration-ms="3306" started-at="2017-08-28T15:28:03Z" finished-at="2017-08-28T15:28:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoDifferentGiftsInOrder -->
-        <test-method status="PASS" signature="twoDifferentGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="twoDifferentGoodsInOrder" duration-ms="3236" started-at="2017-08-27T23:16:37Z" finished-at="2017-08-27T23:16:41Z">
+        <test-method status="PASS" signature="twoDifferentGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="twoDifferentGoodsInOrder" duration-ms="3481" started-at="2017-08-28T15:28:07Z" finished-at="2017-08-28T15:28:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- twoDifferentGoodsInOrder -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="afterClass" is-config="true" duration-ms="470" started-at="2017-08-27T23:16:41Z" finished-at="2017-08-27T23:16:41Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@25618e91]" name="afterClass" is-config="true" duration-ms="457" started-at="2017-08-28T15:28:10Z" finished-at="2017-08-28T15:28:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.zzkg.cases.buy.BuyProcess -->
       <class name="com.zzkg.cases.gift.ExchangeGift">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-08-27T23:16:22Z" finished-at="2017-08-27T23:16:22Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeClass" is-config="true" duration-ms="9" started-at="2017-08-28T15:27:50Z" finished-at="2017-08-28T15:27:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="396" started-at="2017-08-27T23:16:22Z" finished-at="2017-08-27T23:16:22Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="422" started-at="2017-08-28T15:27:50Z" finished-at="2017-08-28T15:27:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="406" started-at="2017-08-27T23:16:22Z" data-provider="exchangeGift" finished-at="2017-08-27T23:16:22Z">
+        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="434" started-at="2017-08-28T15:27:51Z" data-provider="exchangeGift" finished-at="2017-08-28T15:27:51Z">
           <params>
             <param index="0">
               <value>
@@ -980,15 +980,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exchangeGift -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="359" started-at="2017-08-27T23:16:22Z" finished-at="2017-08-27T23:16:23Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="382" started-at="2017-08-28T15:27:51Z" finished-at="2017-08-28T15:27:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="359" started-at="2017-08-27T23:16:23Z" finished-at="2017-08-27T23:16:23Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="448" started-at="2017-08-28T15:27:51Z" finished-at="2017-08-28T15:27:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="406" started-at="2017-08-27T23:16:23Z" data-provider="exchangeGift" finished-at="2017-08-27T23:16:24Z">
+        <test-method status="FAIL" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="410" started-at="2017-08-28T15:27:52Z" data-provider="exchangeGift" finished-at="2017-08-28T15:27:52Z">
           <params>
             <param index="0">
               <value>
@@ -1021,7 +1021,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.zzkg.cases.gift.ExchangeGift.exchangeGift(ExchangeGift.java:34)
+	at com.zzkg.cases.gift.ExchangeGift.exchangeGift(ExchangeGift.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1051,15 +1051,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exchangeGift -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="406" started-at="2017-08-27T23:16:24Z" finished-at="2017-08-27T23:16:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="408" started-at="2017-08-28T15:27:52Z" finished-at="2017-08-28T15:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="391" started-at="2017-08-27T23:16:24Z" finished-at="2017-08-27T23:16:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="391" started-at="2017-08-28T15:27:53Z" finished-at="2017-08-28T15:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="391" started-at="2017-08-27T23:16:24Z" data-provider="exchangeGift" finished-at="2017-08-27T23:16:25Z">
+        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="436" started-at="2017-08-28T15:27:53Z" data-provider="exchangeGift" finished-at="2017-08-28T15:27:53Z">
           <params>
             <param index="0">
               <value>
@@ -1085,15 +1085,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exchangeGift -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="401" started-at="2017-08-27T23:16:25Z" finished-at="2017-08-27T23:16:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="400" started-at="2017-08-28T15:27:53Z" finished-at="2017-08-28T15:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="439" started-at="2017-08-27T23:16:25Z" finished-at="2017-08-27T23:16:26Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="369" started-at="2017-08-28T15:27:54Z" finished-at="2017-08-28T15:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="352" started-at="2017-08-27T23:16:26Z" data-provider="exchangeGift" finished-at="2017-08-27T23:16:26Z">
+        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="409" started-at="2017-08-28T15:27:54Z" data-provider="exchangeGift" finished-at="2017-08-28T15:27:55Z">
           <params>
             <param index="0">
               <value>
@@ -1119,15 +1119,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exchangeGift -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="390" started-at="2017-08-27T23:16:26Z" finished-at="2017-08-27T23:16:26Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="377" started-at="2017-08-28T15:27:55Z" finished-at="2017-08-28T15:27:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="407" started-at="2017-08-27T23:16:26Z" finished-at="2017-08-27T23:16:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="beforeMethod" is-config="true" duration-ms="418" started-at="2017-08-28T15:27:55Z" finished-at="2017-08-28T15:27:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="376" started-at="2017-08-27T23:16:27Z" data-provider="exchangeGift" finished-at="2017-08-27T23:16:27Z">
+        <test-method status="PASS" signature="exchangeGift(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="exchangeGift" duration-ms="405" started-at="2017-08-28T15:27:55Z" data-provider="exchangeGift" finished-at="2017-08-28T15:27:56Z">
           <params>
             <param index="0">
               <value>
@@ -1153,11 +1153,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exchangeGift -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="375" started-at="2017-08-27T23:16:27Z" finished-at="2017-08-27T23:16:28Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterMethod" is-config="true" duration-ms="359" started-at="2017-08-28T15:27:56Z" finished-at="2017-08-28T15:27:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-27T23:16:28Z" finished-at="2017-08-27T23:16:28Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.gift.ExchangeGift@326de728]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-28T15:27:56Z" finished-at="2017-08-28T15:27:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

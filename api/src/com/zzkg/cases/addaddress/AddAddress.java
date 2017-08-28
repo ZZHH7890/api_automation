@@ -19,13 +19,12 @@ public class AddAddress {
 	@Test(enabled = true, dataProvider = "phone", dataProviderClass = CheckAddressPhonePro.class, priority = 1)
 	public void checkAddressPhone(String name, String phone, String expectValue)
 			throws ClientProtocolException, IOException {
-		
 		String responseResult = JavaApi.addAddress("259", "18039", "自动化测试楼栋（勿删）", "深圳", name, "0", "22.408965",
 				"113.826119", phone, "813395", "11111Aa", "东角山");
 		Assert.assertTrue(responseResult.contains(expectValue));
 		
 	}
-
+	
 	@BeforeClass
 	public void beforeClass() {
 		DOMConfigurator.configure("log4j.xml");

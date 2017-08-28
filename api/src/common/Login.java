@@ -6,7 +6,7 @@ import org.apache.http.client.ClientProtocolException;
 import net.sf.json.JSONObject;
 
 public class Login {
-	public static String getToken() throws ClientProtocolException, IOException {
+	public static String getToken() throws IOException {
 		Log.info("+++++++++++++++++开始调用Login获取token++++++++++++++++++++++");
 		// 读取表格config.xlsx的第二行预发布环境信息
 		JSONObject jsonconfig = GetApi.configJson(2);
