@@ -1,17 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="4" passed="0">
+<testng-results skipped="0" failed="11" total="29" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="14098" started-at="2017-08-28T15:48:53Z" finished-at="2017-08-28T15:49:07Z">
+  <suite name="Suite" duration-ms="14763" started-at="2017-08-29T08:49:36Z" finished-at="2017-08-29T08:49:50Z">
     <groups>
     </groups>
-    <test name="api" duration-ms="14098" started-at="2017-08-28T15:48:53Z" finished-at="2017-08-28T15:49:07Z">
-      <class name="com.zzkg.cases.buy.BuyProcess">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="beforeClass" is-config="true" duration-ms="1170" started-at="2017-08-28T23:48:53Z" finished-at="2017-08-28T23:48:55Z">
+    <test name="api" duration-ms="14763" started-at="2017-08-29T08:49:36Z" finished-at="2017-08-29T08:49:50Z">
+      <class name="com.zzkg.cases.addaddress.AddAddress">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="beforeClass" is-config="true" duration-ms="66" started-at="2017-08-29T16:49:36Z" finished-at="2017-08-29T16:49:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="oneGiftInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="oneGiftInOrder" duration-ms="2971" started-at="2017-08-28T23:48:55Z" finished-at="2017-08-28T23:48:57Z">
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="1083" started-at="2017-08-29T16:49:36Z" data-provider="address" finished-at="2017-08-29T16:49:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="448" started-at="2017-08-29T16:49:37Z" data-provider="address" finished-at="2017-08-29T16:49:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[收货人不能为空]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="460" started-at="2017-08-29T16:49:38Z" data-provider="address" finished-at="2017-08-29T16:49:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[收货人不能全为空字符]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -22,7 +231,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.zzkg.cases.buy.BuyProcess.oneGiftInOrder(BuyProcess.java:74)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -51,8 +260,75 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oneGiftInOrder -->
-        <test-method status="FAIL" signature="oneGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="oneGoodsInOrder" duration-ms="2686" started-at="2017-08-28T23:48:57Z" finished-at="2017-08-28T23:49:00Z">
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="458" started-at="2017-08-29T16:49:38Z" data-provider="address" finished-at="2017-08-29T16:49:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[*？&%@]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[收货人只能是汉字字母数字组成]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -63,7 +339,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:36)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -92,8 +368,75 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oneGoodsInOrder -->
-        <test-method status="FAIL" signature="twoDifferentGiftsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="twoDifferentGiftsInOrder" duration-ms="3132" started-at="2017-08-28T23:49:00Z" finished-at="2017-08-28T23:49:03Z">
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="423" started-at="2017-08-29T16:49:39Z" data-provider="address" finished-at="2017-08-29T16:49:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[壹贰叁肆伍陆柒]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[收货人最大只支持6个汉字]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -104,7 +447,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.zzkg.cases.buy.BuyProcess.twoDifferentGiftsInOrder(BuyProcess.java:93)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -133,8 +476,75 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- twoDifferentGiftsInOrder -->
-        <test-method status="FAIL" signature="twoDifferentGoodsInOrder()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="twoDifferentGoodsInOrder" duration-ms="3190" started-at="2017-08-28T23:49:03Z" finished-at="2017-08-28T23:49:07Z">
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="416" started-at="2017-08-29T16:49:39Z" data-provider="address" finished-at="2017-08-29T16:49:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[aaaaaaaaaa19]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[收货人最大只支持12个数字和字母]]>
+              </value>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -145,7 +555,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.zzkg.cases.buy.BuyProcess.twoDifferentGoodsInOrder(BuyProcess.java:56)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -174,12 +584,1898 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- twoDifferentGoodsInOrder -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@f5f2bb7]" name="afterClass" is-config="true" duration-ms="948" started-at="2017-08-28T23:49:07Z" finished-at="2017-08-28T23:49:07Z">
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="413" started-at="2017-08-29T16:49:40Z" data-provider="address" finished-at="2017-08-29T16:49:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="370" started-at="2017-08-29T16:49:40Z" data-provider="address" finished-at="2017-08-29T16:49:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="402" started-at="2017-08-29T16:49:40Z" data-provider="address" finished-at="2017-08-29T16:49:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="400" started-at="2017-08-29T16:49:41Z" data-provider="address" finished-at="2017-08-29T16:49:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[   ]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="420" started-at="2017-08-29T16:49:41Z" data-provider="address" finished-at="2017-08-29T16:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[137146727766]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="393" started-at="2017-08-29T16:49:42Z" data-provider="address" finished-at="2017-08-29T16:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1371467277]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="420" started-at="2017-08-29T16:49:42Z" data-provider="address" finished-at="2017-08-29T16:49:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[137$46&27@6]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="447" started-at="2017-08-29T16:49:42Z" data-provider="address" finished-at="2017-08-29T16:49:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13a14b72z7]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="372" started-at="2017-08-29T16:49:43Z" data-provider="address" finished-at="2017-08-29T16:49:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13,14!72?7]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="400" started-at="2017-08-29T16:49:43Z" data-provider="address" finished-at="2017-08-29T16:49:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[     ]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="371" started-at="2017-08-29T16:49:44Z" data-provider="address" finished-at="2017-08-29T16:49:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1371467 776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="376" started-at="2017-08-29T16:49:44Z" data-provider="address" finished-at="2017-08-29T16:49:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[手机号码格式错误]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="390" started-at="2017-08-29T16:49:44Z" data-provider="address" finished-at="2017-08-29T16:49:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[请选择楼栋单元]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="398" started-at="2017-08-29T16:49:45Z" data-provider="address" finished-at="2017-08-29T16:49:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="419" started-at="2017-08-29T16:49:45Z" data-provider="address" finished-at="2017-08-29T16:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="421" started-at="2017-08-29T16:49:46Z" data-provider="address" finished-at="2017-08-29T16:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[903Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="391" started-at="2017-08-29T16:49:46Z" data-provider="address" finished-at="2017-08-29T16:49:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="391" started-at="2017-08-29T16:49:46Z" data-provider="address" finished-at="2017-08-29T16:49:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[123Aa]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[成功]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="363" started-at="2017-08-29T16:49:47Z" data-provider="address" finished-at="2017-08-29T16:49:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[门牌号只能由数字和字母组成]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="382" started-at="2017-08-29T16:49:47Z" data-provider="address" finished-at="2017-08-29T16:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[    ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[门牌号只能由数字和字母组成]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="401" started-at="2017-08-29T16:49:48Z" data-provider="address" finished-at="2017-08-29T16:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[123 4]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[门牌号只能由数字和字母组成]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="374" started-at="2017-08-29T16:49:48Z" data-provider="address" finished-at="2017-08-29T16:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[abc d]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[门牌号只能由数字和字母组成]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="FAIL" signature="checkAddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="checkAddAddress" duration-ms="398" started-at="2017-08-29T16:49:48Z" data-provider="address" finished-at="2017-08-29T16:49:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[259]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[18039]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[自动化测试楼栋（勿删）]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[深圳]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[张大爷]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[22.408965]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[113.826119]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[13714672776]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[813395]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[12345678910]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[东角山]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[门牌号最大长度为10]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.zzkg.cases.addaddress.AddAddress.checkAddAddress(AddAddress.java:27)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddAddress -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@73035e27]" name="afterClass" is-config="true" duration-ms="1679" started-at="2017-08-29T16:49:49Z" finished-at="2017-08-29T16:49:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.zzkg.cases.buy.BuyProcess -->
+      </class> <!-- com.zzkg.cases.addaddress.AddAddress -->
     </test> <!-- api -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -44,7 +44,7 @@ public class AddAddress {
 
 	@AfterClass
 	public void afterClass() throws ClientProtocolException, IOException {
-//		 ClearEnv.deleteAddress();
+		 ClearEnv.deleteAddress();
 		Log.endTestCase("AddAddressÓÃÀı²âÊÔ½áÊø");
 	}
 
