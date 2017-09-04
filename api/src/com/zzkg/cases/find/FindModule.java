@@ -2,10 +2,9 @@ package com.zzkg.cases.find;
 
 import org.testng.annotations.Test;
 
+import com.zzkg.common.Log;
 import com.zzkg.datapro.QuickBuyPro;
 import com.zzkg.japi.JavaApi;
-
-import common.Log;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;

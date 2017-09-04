@@ -1,15 +1,17 @@
-package common;
+package com.zzkg.common;
 
 import java.io.IOException;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
@@ -67,7 +69,7 @@ public class HttpClientMethod {
 	public static String postJsonToken(String host, String path, String region, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJsonToken++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpPost httppost = new HttpPost(apiurl);
 		httppost.setHeader("Content-Type", "application/json");
@@ -78,10 +80,12 @@ public class HttpClientMethod {
 		Log.info("测试接口的传入json数据：" + jsonParam.toString());
 		StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");// 解决中文乱码问题
 		httppost.setEntity(entity);
-		HttpResponse httpresponse = httpclient.execute(httppost);
+		CloseableHttpResponse httpresponse = httpclient.execute(httppost);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httppost.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用postJsonToken++++++++++++++++++++++");
 		return strResult;
 	}
@@ -90,7 +94,7 @@ public class HttpClientMethod {
 	public static String postJson(String host, String path, String region, String token, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJson++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpPost httppost = new HttpPost(apiurl);
 		httppost.setHeader("Content-Type", "application/json");
@@ -105,10 +109,12 @@ public class HttpClientMethod {
 		Log.info("测试接口的传入json数据：" + jsonParam.toString());
 		StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");// 解决中文乱码问题
 		httppost.setEntity(entity);
-		HttpResponse httpresponse = httpclient.execute(httppost);
+		CloseableHttpResponse httpresponse = httpclient.execute(httppost);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httppost.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用postJson++++++++++++++++++++++");
 		return strResult;
 	}
@@ -144,7 +150,7 @@ public class HttpClientMethod {
 	public static String delete(String host, String path, String region, String token)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用delete++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpDelete httpdelete = new HttpDelete(apiurl);
 		httpdelete.setHeader("region", region);
@@ -153,10 +159,12 @@ public class HttpClientMethod {
 		Log.info("测试接口：" + path);
 		Log.info("测试社区：" + region);
 		Log.info("用户登录token:" + token);
-		HttpResponse httpresponse = httpclient.execute(httpdelete);
+		CloseableHttpResponse httpresponse = httpclient.execute(httpdelete);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httpdelete.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用delete++++++++++++++++++++++");
 		return strResult;
 	}

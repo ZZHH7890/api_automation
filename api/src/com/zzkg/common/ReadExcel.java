@@ -1,4 +1,4 @@
-package common;
+package com.zzkg.common;
 
 import java.util.List;
 import java.io.File;

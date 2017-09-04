@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
 
-import common.ReadExcel;
+import com.zzkg.common.ReadExcel;
 
 public class QuickBuyPro {
 	//读取表格返回一键购买jsonArrayParam和期望值

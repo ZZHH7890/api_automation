@@ -6,8 +6,8 @@ import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.log4j.xml.DOMConfigurator;
 
-import common.ClearEnv;
-import common.Log;
+import com.zzkg.common.ClearEnv;
+import com.zzkg.common.Log;
 
 public class DebugTry {
 

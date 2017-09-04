@@ -1,10 +1,10 @@
-package datapro;
+package com.zzkg.datapro;
 
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
 
-import common.ReadExcel;
+import com.zzkg.common.ReadExcel;
 
 public class ExchangeGiftPro {
 	//读取表格返回兑换赠品数量，赠品的id,赠品的状态，期望值

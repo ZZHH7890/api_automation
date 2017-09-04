@@ -1,4 +1,4 @@
-package common;
+package com.zzkg.common;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import net.sf.json.JSONObject;
 public class ClearEnv {
 	public static void deleteAddress() throws ClientProtocolException, IOException {
 		// 预发布环境在表格的第二行
-		JSONObject jsonconfig = GetApi.configJson(2);
+		JSONObject jsonconfig = GetApi.configJson(Config.TEST_ENV);
 		// 获取登录token
 		String token = Login.getToken();
 		// 获取收货地址列表接口在表格的第六行

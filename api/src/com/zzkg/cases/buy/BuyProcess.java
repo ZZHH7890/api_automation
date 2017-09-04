@@ -2,11 +2,10 @@ package com.zzkg.cases.buy;
 
 import org.testng.annotations.Test;
 
+import com.zzkg.common.ClearEnv;
+import com.zzkg.common.InitEnv;
+import com.zzkg.common.Log;
 import com.zzkg.japi.JavaApi;
-
-import common.ClearEnv;
-import common.InitEnv;
-import common.Log;
 
 import org.testng.annotations.BeforeClass;
 
@@ -97,7 +96,7 @@ public class BuyProcess {
 	public void beforeClass() throws ClientProtocolException, IOException {
 		DOMConfigurator.configure("log4j.xml");
 		Log.startTestCase("BuyProcess”√¿˝≤‚ ‘ø™ º");
-		InitEnv.addAddress();
+//		InitEnv.addAddress();
 
 	}
 
