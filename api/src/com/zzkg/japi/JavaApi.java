@@ -16,9 +16,9 @@ public class JavaApi {
 	public static String buyGoods(String dealCount, String dealId, String limitFlag, String odLabelId, String selected,
 			String specId) throws IOException {
 		Log.info("+++++++++++++++++开始调用购买商品接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
+		// 读取表格testData.xlsx的config第二行预发布环境信息
 		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第三行购买商品接口信息
+		// 读取表格testData.xlsx的api第三行购买商品接口信息
 		JSONObject jsonapi = GetApi.getApiJson(11);
 		// 设置post方法的传入Body Data
 		JSONObject jsonParam = new JSONObject();
@@ -240,4 +240,24 @@ public class JavaApi {
 		}
 	}
 
+	// 执行菜谱一键购买接口
+	public static String quickBuy(String jsonArrayString) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱一键购买接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取表格testData.xlsx的config第三行21环境信息
+		JSONObject jsonConfig = GetApi.configJson(3);
+		// 读取表格testData.xlsx的api第12行菜谱一键购买接口信息
+		JSONObject jsonApi = GetApi.getApiJson(12);
+		JSONArray jsonArray = JSONArray.fromObject(jsonArrayString);
+		try {
+			String responseString = HttpClientMethod.postJsonArray(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl"), jsonConfig.getString("region"), token, jsonArray);
+			Log.info("+++++++++++++++++结束调用菜谱一键购买接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱一键购买失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
 }
