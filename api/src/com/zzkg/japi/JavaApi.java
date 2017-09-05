@@ -15,21 +15,14 @@ import net.sf.json.JSONObject;
 
 public class JavaApi {
 	// 购买商品接口
-	public static String buyGoods(String dealCount, String dealId, String limitFlag, String odLabelId, String selected,
-			String specId) throws IOException {
+	public static String buyGoods(String jsonString) throws IOException {
 		Log.info("+++++++++++++++++开始调用购买商品接口++++++++++++++++++++++");
 		// 读取环境信息
 		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取接口信息
 		JSONObject jsonapi = GetApi.getApiJson(11);
 		// 设置post方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", dealCount);
-		jsonParam.put("dealId", dealId);
-		jsonParam.put("limitFlag", limitFlag);
-		jsonParam.put("odLabelId", odLabelId);
-		jsonParam.put("selected", selected);
-		jsonParam.put("specId", specId);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
@@ -44,18 +37,14 @@ public class JavaApi {
 	}
 
 	// 兑换赠品接口
-	public static String exchangeGift(String dealCount, String dealId, String selected)
-			throws ClientProtocolException, IOException {
+	public static String exchangeGift(String jsonString) throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用兑换赠品接口++++++++++++++++++++++");
 		// 读取环境信息
 		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取接口信息
 		JSONObject jsonapi = GetApi.getApiJson(3);
 		// 设置put方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", dealCount);
-		jsonParam.put("dealId", dealId);
-		jsonParam.put("selected", selected);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
 			String responseString = HttpClientMethod.putJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
@@ -75,21 +64,22 @@ public class JavaApi {
 		// 读取环境信息
 		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取接口信息
-		JSONObject jsonApi = GetApi.getApiJson(4);
+		JSONObject jsonapi = GetApi.getApiJson(4);
 		// 设置post方法的传入Body Data
 		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
-			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
 					jsonConfig.getString("region"), Login.getToken(), jsonParam);
 			Log.info("+++++++++++++++++结束调用增加地址接口++++++++++++++++++++++");
 			return responseString;
 		} catch (Exception e) {
-			String failString = "接口执行失败，增加收货地址失败！！";
+			String failString = "接口执行失败，增加地址失败！！";
 			Log.info(failString);
 			return failString;
 		}
 	}
+
 
 	// 获取最新添加的收货地址id
 	public static String getFirstAddressId() throws ClientProtocolException, IOException {
@@ -140,21 +130,13 @@ public class JavaApi {
 	}
 
 	// 执行下单接口获取订单号，支付金额
-	public static String[] getOrderInfo(String addressId, String buyWay, String cartToken, String deliverType,
-			String delivertime, String remark, String serviceReminderFlag) throws ClientProtocolException, IOException {
+	public static String[] getOrderInfo(String jsonString) throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用下单接口++++++++++++++++++++++");
 		// 读取环境信息
 		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(8);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("addressId", addressId);
-		jsonParam.put("buyWay", buyWay);
-		jsonParam.put("cartToken", cartToken);
-		jsonParam.put("deliverType", deliverType);
-		jsonParam.put("delivertime", delivertime);
-		jsonParam.put("remark", remark);
-		jsonParam.put("serviceReminderFlag", serviceReminderFlag);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
 					jsonConfig.getString("region"), Login.getToken(), jsonParam);
@@ -205,16 +187,15 @@ public class JavaApi {
 	}
 
 	// 执行会员宝支付接口
-	public static String balancePay(String prepayOrderId) throws ClientProtocolException, IOException {
+	public static String balancePay(String prepayOrderId, String jsonString)
+			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用会员宝支付接口++++++++++++++++++++++");
 		String token = Login.getToken();
 		// 读取环境信息
 		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(10);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("expireTime", "");
-		jsonParam.put("password", "111111");
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"),
 					jsonApi.getString("apiurl") + prepayOrderId, jsonConfig.getString("region"), token, jsonParam);

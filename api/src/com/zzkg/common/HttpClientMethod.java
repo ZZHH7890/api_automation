@@ -23,7 +23,7 @@ public class HttpClientMethod {
 	public static String putJson(String host, String path, String region, String token, JSONObject jsonParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用putJson++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpPut httpput = new HttpPut(apiurl);
 		httpput.setHeader("Content-Type", "application/json");
@@ -36,10 +36,12 @@ public class HttpClientMethod {
 		Log.info("测试接口的传入json数据：" + jsonParam.toString());
 		StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");// 解决中文乱码问题
 		httpput.setEntity(entity);
-		HttpResponse httpresponse = httpclient.execute(httpput);
+		CloseableHttpResponse httpresponse = httpclient.execute(httpput);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httpput.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用putJson++++++++++++++++++++++");
 		return strResult;
 	}
@@ -48,7 +50,7 @@ public class HttpClientMethod {
 	public static String get(String host, String path, String region, String token)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用get++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpGet httpget = new HttpGet(apiurl);
 		httpget.setHeader("region", region);
@@ -57,10 +59,12 @@ public class HttpClientMethod {
 		Log.info("测试接口：" + path);
 		Log.info("测试社区：" + region);
 		Log.info("用户登录token:" + token);
-		HttpResponse httpresponse = httpclient.execute(httpget);
+		CloseableHttpResponse httpresponse = httpclient.execute(httpget);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httpget.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用get++++++++++++++++++++++");
 		return strResult;
 	}
@@ -100,6 +104,7 @@ public class HttpClientMethod {
 		httppost.setHeader("Content-Type", "application/json");
 		httppost.setHeader("region", region);
 		httppost.setHeader("token", token);
+		httppost.setHeader("appversion", "wx:3.9.5");
 		// 会员宝支付需要的appId
 		httppost.setHeader("appId", "appidzzkg9021v754d");
 		Log.info("测试服务器：" + host);
@@ -123,7 +128,7 @@ public class HttpClientMethod {
 	public static String postJsonArray(String host, String path, String region, String token, JSONArray jsonArrayParam)
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用postJson++++++++++++++++++++++");
-		HttpClient httpclient = HttpClients.createDefault();
+		CloseableHttpClient httpclient = HttpClients.createDefault();
 		String apiurl = host + path;
 		HttpPost httppost = new HttpPost(apiurl);
 		httppost.setHeader("Content-Type", "application/json");
@@ -138,10 +143,12 @@ public class HttpClientMethod {
 		Log.info("测试接口的传入json数据：" + jsonArrayParam.toString());
 		StringEntity entity = new StringEntity(jsonArrayParam.toString(), "utf-8");// 解决中文乱码问题
 		httppost.setEntity(entity);
-		HttpResponse httpresponse = httpclient.execute(httppost);
+		CloseableHttpResponse httpresponse = httpclient.execute(httppost);
 		String strResult = EntityUtils.toString(httpresponse.getEntity());
 		Log.info("测试接口返回:" + strResult);
+		httpresponse.close();
 		httppost.releaseConnection();
+		httpclient.close();
 		Log.info("+++++++++++++++++结束调用postJson++++++++++++++++++++++");
 		return strResult;
 	}

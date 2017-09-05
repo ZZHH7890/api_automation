@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1967" started-at="2017-09-04T16:14:58Z" finished-at="2017-09-04T16:15:00Z">
+  <suite name="Suite" duration-ms="1502" started-at="2017-09-05T09:27:20Z" finished-at="2017-09-05T09:27:22Z">
     <groups>
     </groups>
-    <test name="api" duration-ms="1967" started-at="2017-09-04T16:14:58Z" finished-at="2017-09-04T16:15:00Z">
-      <class name="com.zzkg.cases.addaddress.AddAddress">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@55f3ddb1]" name="beforeClass" is-config="true" duration-ms="47" started-at="2017-09-05T00:14:58Z" finished-at="2017-09-05T00:14:58Z">
+    <test name="Test" duration-ms="1502" started-at="2017-09-05T09:27:20Z" finished-at="2017-09-05T09:27:22Z">
+      <class name="test.S">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.S@cb5822]" name="beforeClass" is-config="true" duration-ms="63" started-at="2017-09-05T17:27:20Z" finished-at="2017-09-05T17:27:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.addaddress.AddAddress@55f3ddb1]" name="checkAddAddress" duration-ms="892" started-at="2017-09-05T00:14:59Z" data-provider="address" finished-at="2017-09-05T00:14:59Z">
+        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String)[pri:1, instance:test.S@cb5822]" name="checkAddAddress" duration-ms="901" started-at="2017-09-05T17:27:21Z" data-provider="address" finished-at="2017-09-05T17:27:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"contact":"张大爷","phone":13714672776,"gender":0,"regionId":813395,"latitude":22.408965,"longitude":113.826119,"room1":"1111","village":"东角山","city1":"深圳","addressNaviId":18039,"building":"自动化测试楼栋C栋（勿删）","addressBuildingId":256}]]>
+                <![CDATA[{"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":113.826119,"room1":"9999","village":"东角山","city1":"深圳","addressNaviId":18039,"building":"自动化测试楼栋C栋（勿删）","addressBuildingId":256}]]>
               </value>
             </param>
             <param index="1">
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAddAddress -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.addaddress.AddAddress@55f3ddb1]" name="afterClass" is-config="true" duration-ms="568" started-at="2017-09-05T00:14:59Z" finished-at="2017-09-05T00:15:00Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.S@cb5822]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-05T17:27:22Z" finished-at="2017-09-05T17:27:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.zzkg.cases.addaddress.AddAddress -->
-    </test> <!-- api -->
+      </class> <!-- test.S -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -27,10 +27,10 @@ import org.testng.annotations.AfterSuite;
 public class ExchangeGift {
 	//测试兑换赠品接口
 	@Test(enabled = true, dataProvider = "exchangeGift", dataProviderClass = ExchangeGiftPro.class, priority = 1)
-	public void exchangeGift(String dealCount, String dealId, String selected, String expectValue)
+	public void exchangeGift(String jsonString, String expectValue)
 			throws ClientProtocolException, IOException {
 		// 执行兑换赠品接口
-		String respondresult = JavaApi.exchangeGift(dealCount, dealId, selected);
+		String respondresult = JavaApi.exchangeGift(jsonString);
 		Assert.assertTrue(respondresult.contains(expectValue));
 	}
 
@@ -41,7 +41,7 @@ public class ExchangeGift {
 
 	@AfterMethod
 	public void afterMethod() throws ClientProtocolException, IOException {
-		InitEnv.clearCart();
+//		InitEnv.clearCart();
 	}
 
 	@BeforeClass
