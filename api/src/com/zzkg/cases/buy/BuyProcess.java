@@ -19,7 +19,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class BuyProcess {
-	// 单独购买一个商品
+	// 测试添加商品到购物车接口
 	@Test(enabled = true, dataProvider = "buyProcess", dataProviderClass = BuyProcessPro.class, priority = 1)
 	public void oneGoodsInOrder(String jsonString, String expectValue) throws ClientProtocolException, IOException {
 		// 购买商品：自动化测试商品1
@@ -93,13 +93,12 @@ public class BuyProcess {
 	public void beforeClass() throws ClientProtocolException, IOException {
 		DOMConfigurator.configure("log4j.xml");
 		Log.startTestCase("BuyProcess用例测试开始");
-		InitEnv.addAddress();
-
+		InitEnv.clearCart();
 	}
 
 	@AfterClass
 	public void afterClass() throws ClientProtocolException, IOException {
-		// ClearEnv.deleteAddress();
+		InitEnv.clearCart();
 		Log.endTestCase("BuyProcess用例测试结束");
 	}
 

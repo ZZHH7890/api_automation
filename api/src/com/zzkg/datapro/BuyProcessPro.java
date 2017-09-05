@@ -12,7 +12,7 @@ public class BuyProcessPro {
 	@DataProvider(name = "buyProcess")
 	public static Object[][] buyProcessData() throws IOException {
 		return ReadExcel.getTestData("C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\ExcelForData\\",
-				"testData.xlsx", "buy");
+				"testData.xlsx", "buyprocess");
 	}
 
 }

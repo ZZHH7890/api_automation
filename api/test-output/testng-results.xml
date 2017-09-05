@@ -1,37 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1502" started-at="2017-09-05T09:27:20Z" finished-at="2017-09-05T09:27:22Z">
+  <suite name="Suite" duration-ms="4093" started-at="2017-09-05T16:00:34Z" finished-at="2017-09-05T16:00:38Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1502" started-at="2017-09-05T09:27:20Z" finished-at="2017-09-05T09:27:22Z">
-      <class name="test.S">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.S@cb5822]" name="beforeClass" is-config="true" duration-ms="63" started-at="2017-09-05T17:27:20Z" finished-at="2017-09-05T17:27:20Z">
+    <test name="Test" duration-ms="4093" started-at="2017-09-05T16:00:34Z" finished-at="2017-09-05T16:00:38Z">
+      <class name="com.zzkg.cases.buy.BuyProcess">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="beforeClass" is-config="true" duration-ms="1356" started-at="2017-09-06T00:00:34Z" finished-at="2017-09-06T00:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="checkAddAddress(java.lang.String, java.lang.String)[pri:1, instance:test.S@cb5822]" name="checkAddAddress" duration-ms="901" started-at="2017-09-05T17:27:21Z" data-provider="address" finished-at="2017-09-05T17:27:22Z">
+        <test-method status="FAIL" signature="oneGoodsInOrder(java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="oneGoodsInOrder" duration-ms="640" started-at="2017-09-06T00:00:35Z" data-provider="buyProcess" finished-at="2017-09-06T00:00:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":113.826119,"room1":"9999","village":"东角山","city1":"深圳","addressNaviId":18039,"building":"自动化测试楼栋C栋（勿删）","addressBuildingId":256}]]>
+                <![CDATA[{"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[成功]]>
+                <![CDATA[允许购买]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAddAddress -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.S@cb5822]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-05T17:27:22Z" finished-at="2017-09-05T17:27:22Z">
+        </test-method> <!-- oneGoodsInOrder -->
+        <test-method status="FAIL" signature="oneGoodsInOrder(java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="oneGoodsInOrder" duration-ms="482" started-at="2017-09-06T00:00:36Z" data-provider="buyProcess" finished-at="2017-09-06T00:00:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":0}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[商品数量不能为0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneGoodsInOrder -->
+        <test-method status="FAIL" signature="oneGoodsInOrder(java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="oneGoodsInOrder" duration-ms="485" started-at="2017-09-06T00:00:36Z" data-provider="buyProcess" finished-at="2017-09-06T00:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":-1}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[商品数量不能为负数]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneGoodsInOrder -->
+        <test-method status="FAIL" signature="oneGoodsInOrder(java.lang.String, java.lang.String)[pri:1, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="oneGoodsInOrder" duration-ms="525" started-at="2017-09-06T00:00:37Z" data-provider="buyProcess" finished-at="2017-09-06T00:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1000}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[商品数量库存不足]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneGoodsInOrder -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.cases.buy.BuyProcess@55f3ddb1]" name="afterClass" is-config="true" duration-ms="506" started-at="2017-09-06T00:00:37Z" finished-at="2017-09-06T00:00:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- test.S -->
+      </class> <!-- com.zzkg.cases.buy.BuyProcess -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

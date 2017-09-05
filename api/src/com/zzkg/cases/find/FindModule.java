@@ -24,7 +24,6 @@ public class FindModule {
 		// 执行一键购买接口，获取返回值
 		String respondresult = JavaApi.quickBuy(jsonArrayString);
 		Assert.assertTrue(respondresult.contains(expectValue));
-
 	}
 
 	@BeforeClass

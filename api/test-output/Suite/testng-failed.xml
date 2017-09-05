@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="api(failed)">
+  <test name="Test(failed)">
     <classes>
       <class name="com.zzkg.cases.buy.BuyProcess">
         <methods>
-          <include name="oneGoodsInOrder" invocation-numbers="0"/>
+          <include name="oneGoodsInOrder" invocation-numbers="0 1 2 3"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.zzkg.cases.buy.BuyProcess -->
     </classes>
-  </test> <!-- api(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

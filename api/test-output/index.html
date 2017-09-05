@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 4 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="test.S" hash-for-method="checkAddAddress({&quot;contact&quot;:&quot;99&quot;,&quot;phone&quot;:13714672776,&quot;gender&quot;:1,&quot;regionId&quot;:813395,&quot;latitude&quot;:22.408965,&quot;longitude&quot;:11...)">checkAddAddress({"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":11...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zzkg.cases.buy.BuyProcess" hash-for-method="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:0},...)">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":0},...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zzkg.cases.buy.BuyProcess" hash-for-method="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:-1}...)">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":-1}...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zzkg.cases.buy.BuyProcess" hash-for-method="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:1},...)">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1},...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.zzkg.cases.buy.BuyProcess" hash-for-method="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:100...)">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":100...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,22 +132,62 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.S</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.zzkg.cases.buy.BuyProcess</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkAddAddress({&quot;contact&quot;:&quot;99&quot;,&quot;phone&quot;:13714672776,&quot;gender&quot;:1,&quot;regionId&quot;:813395,&quot;latitude&quot;:22.408965,&quot;longitude&quot;:11...)">
-                  </a> <!-- checkAddAddress({"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":11...) -->
-                  <span class="method-name">checkAddAddress</span>
-                  <span class="parameters">({"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":113.826119,"room1":"9999","village":"东角山","city1":"深圳","addressNaviId":18039,"building":"自动化测试楼栋C栋（勿删）","addressBuildingId":256}, 成功)</span>
+                  <a name="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:0},...)">
+                  </a> <!-- oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":0},...) -->
+                  <span class="method-name">oneGoodsInOrder</span>
+                  <span class="parameters">({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":0}, 商品数量不能为0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:-1}...)">
+                  </a> <!-- oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":-1}...) -->
+                  <span class="method-name">oneGoodsInOrder</span>
+                  <span class="parameters">({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":-1}, 商品数量不能为负数)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:1},...)">
+                  </a> <!-- oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1},...) -->
+                  <span class="method-name">oneGoodsInOrder</span>
+                  <span class="parameters">({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1}, 允许购买)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="oneGoodsInOrder({&quot;dealId&quot;:991824,&quot;odLabelId&quot;:&quot;-1&quot;,&quot;limitFlag&quot;:false,&quot;selected&quot;:false,&quot;specId&quot;:924116,&quot;dealCount&quot;:100...)">
+                  </a> <!-- oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":100...) -->
+                  <span class="method-name">oneGoodsInOrder</span>
+                  <span class="parameters">({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1000}, 商品数量库存不足)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.zzkg.cases.buy.BuyProcess.oneGoodsInOrder(BuyProcess.java:27)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -142,10 +197,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.S&quot;/&gt;
+      &lt;class name=&quot;com.zzkg.cases.buy.BuyProcess&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -185,16 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkAddAddress')
-data.setCell(0, 2, 'test.S')
-data.setCell(0, 3, 901);
+data.setCell(0, 1, 'oneGoodsInOrder')
+data.setCell(0, 2, 'com.zzkg.cases.buy.BuyProcess')
+data.setCell(0, 3, 640);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'oneGoodsInOrder')
+data.setCell(1, 2, 'com.zzkg.cases.buy.BuyProcess')
+data.setCell(1, 3, 525);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'oneGoodsInOrder')
+data.setCell(2, 2, 'com.zzkg.cases.buy.BuyProcess')
+data.setCell(2, 3, 485);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'oneGoodsInOrder')
+data.setCell(3, 2, 'com.zzkg.cases.buy.BuyProcess')
+data.setCell(3, 3, 482);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 901 ms</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -220,18 +287,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.S</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zzkg.cases.buy.BuyProcess</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">checkAddAddress({"contact":"99","phone":13714672776,"gender":1,"regionId":813395,"latitude":22.408965,"longitude":11...)</span>
-                <span class="method-start">593 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":1},...)</span>
+                <span class="method-start">1435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":0},...)</span>
+                <span class="method-start">2078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":-1}...)</span>
+                <span class="method-start">2564 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">oneGoodsInOrder({"dealId":991824,"odLabelId":"-1","limitFlag":false,"selected":false,"specId":924116,"dealCount":100...)</span>
+                <span class="method-start">3052 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1496 ms</span>
+                <span class="method-start">3580 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

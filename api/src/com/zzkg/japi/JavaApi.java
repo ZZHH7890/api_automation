@@ -80,7 +80,6 @@ public class JavaApi {
 		}
 	}
 
-
 	// 获取最新添加的收货地址id
 	public static String getFirstAddressId() throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用获取收货地址id信息接口++++++++++++++++++++++");

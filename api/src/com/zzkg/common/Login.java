@@ -32,7 +32,5 @@ public class Login {
 			Log.info(failString);
 			return failString;
 		}
-
 	}
-
 }
