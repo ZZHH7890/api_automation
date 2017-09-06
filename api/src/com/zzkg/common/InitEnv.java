@@ -25,18 +25,16 @@ public class InitEnv {
 			String failString = "增加地址失败！";
 			Log.info(failString);
 		}
-
 	}
 
 	// 增加收货地址
 	public static void addAddress() {
-//		try {
-//			JavaApi.addAddress("259", "18039", "自动化测试楼栋（勿删）", "深圳", "张大爷", "0", "22.408965", "113.826119",
-//					"13714672776", "813395", "11111Aa", "东角山");
-//		} catch (Exception e) {
-//			String failString = "增加地址失败！";
-//			Log.info(failString);
-//		}
+		try {
+			JavaApi.addAddress(Config.INIT_ADDRESS);
+		} catch (Exception e) {
+			String failString = "初始化增加地址失败！";
+			Log.info(failString);
+		}
 	}
 
 	// 清空日志
