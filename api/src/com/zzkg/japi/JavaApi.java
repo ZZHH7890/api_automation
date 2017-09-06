@@ -227,4 +227,25 @@ public class JavaApi {
 			return failString;
 		}
 	}
+
+	// 获取购物车商品数量
+	public static String getCartCount() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取购物车商品数量接口++++++++++++++++++++++");
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(13);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), Login.getToken());
+			Log.info("+++++++++++++++++结束调用获取购物车商品数量接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取购物车中商品数量data失败！！";
+			Log.info(failString);
+			return failString;
+		}
+
+	}
+
 }

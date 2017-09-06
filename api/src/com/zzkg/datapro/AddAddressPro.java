@@ -14,5 +14,4 @@ public class AddAddressPro {
 		return ReadExcel.getTestData("C:\\Users\\Administrator\\eclipse-workspace\\api_automation\\api\\ExcelForData\\",
 				"testData.xlsx", "address");
 	}
-
 }
