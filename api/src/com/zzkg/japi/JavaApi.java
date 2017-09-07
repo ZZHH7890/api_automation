@@ -105,6 +105,213 @@ public class JavaApi {
 
 	}
 
+	// 获取最新菜谱搜索的关键词id
+	public static String getFirstDiscoveryRecordId() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取最新菜谱搜索的关键词id信息接口++++++++++++++++++++++");
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(15);
+		try {
+			// 执行用户最近搜索关键词接口
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), Login.getToken());
+			// 将接口返回的字符串转换成json
+			JSONObject discoveryRecordApiJson = JSONObject.fromObject(responseString);
+			String data = discoveryRecordApiJson.getString("data");
+			JSONArray searchRecordArraryJson = JSONArray.fromObject(data);
+			JSONObject jsonObject = searchRecordArraryJson.getJSONObject(0);
+			String searchRecordId = jsonObject.getString("id");
+			Log.info("菜谱搜索最新历史记录searchRecordId: " + searchRecordId);
+			return searchRecordId;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取最新菜谱搜索的关键词id失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 删除菜谱搜索的关键词
+	public static String deleteDiscoveryRecordId(String searchRecordId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用删除菜谱搜索的关键词接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(14);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + searchRecordId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用删除菜谱搜索的关键词接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取prepayOrderId失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 增加or取消菜谱or文章关注
+	public static String attention(String cookbookArticleId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用增加or取消菜谱or文章关注接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(17);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用增加or取消菜谱or文章关注接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，增加or取消菜谱or文章关注失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 推荐菜谱/文章点赞
+	public static String like(String cookbookArticleId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用推荐菜谱/文章点赞接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(18);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用推荐菜谱/文章点赞接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，推荐菜谱/文章点赞失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取推荐菜谱/文章详情
+	public static String getcookbookArticleDetail(String cookbookArticleId)
+			throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取推荐菜谱/文章详情接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(19);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取推荐菜谱/文章详情接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取推荐菜谱/文章详情失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取搜索热词
+	public static String getHotKeywords() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取搜索热词接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(16);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取搜索热词接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取搜索热词失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取关注菜谱/文章列表
+	public static String getAttentionsList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取关注菜谱/文章列表接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(20);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取关注菜谱/文章列表接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取关注菜谱/文章列表失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取精选菜谱/文章列表
+	public static String getHandpickedList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取精选菜谱/文章列表接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(21);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取精选菜谱/文章列表接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取精选菜谱/文章列表失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取菜谱/文章banner轮播图
+	public static String getBannerList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱/文章banner轮播图接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(22);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用菜谱/文章banner轮播图接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱/文章banner轮播图失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 菜谱/文章搜索
+	public static String searchcookbookArticle(String keyword) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱/文章搜索接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(23);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + keyword, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用菜谱/文章搜索接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱/文章搜索失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
 	// 订单确认信息获取carttoken
 	public static String getCartToken() throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用订单确认信息接口++++++++++++++++++++++");
@@ -245,7 +452,6 @@ public class JavaApi {
 			Log.info(failString);
 			return failString;
 		}
-
 	}
 
 }

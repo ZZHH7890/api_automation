@@ -2,7 +2,6 @@ package test;
 
 import org.testng.annotations.Test;
 
-import com.zzkg.datapro.AddAddressPro;
 import com.zzkg.japi.JavaApi;
 
 import net.sf.json.JSONObject;

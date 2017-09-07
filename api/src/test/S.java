@@ -2,7 +2,7 @@ package test;
 
 import org.testng.annotations.Test;
 
-import com.zzkg.datapro.AddAddressPro;
+
 import com.zzkg.japi.JavaApi;
 
 import org.testng.annotations.BeforeClass;
@@ -15,7 +15,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class S {
-	@Test(enabled = true, dataProvider = "address", dataProviderClass = AddAddressPro.class, priority = 1)
+	@Test()
 	public void checkAddAddress(String jsonString, String expectValue) throws ClientProtocolException, IOException {
 		// 执行添加地址接口
 		String responseResult = JavaApi.addAddress(jsonString);

@@ -8,7 +8,6 @@ import com.zzkg.common.HttpClientMethod;
 import com.zzkg.common.InitEnv;
 import com.zzkg.common.Log;
 import com.zzkg.common.Login;
-import com.zzkg.datapro.ExchangeGiftPro;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

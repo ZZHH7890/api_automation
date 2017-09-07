@@ -23,7 +23,7 @@ public class ClearEnv {
 			JSONArray jsonAddressArrary = JSONArray.fromObject(addressStr);
 			// 循环获取数组中每一个json的key(id)的值用于删除地址接口
 			if (jsonAddressArrary.size() == 0) {
-				System.out.println("用户没有地址");
+				Log.info("用户没有地址,不需要清空地址");		
 			} else {
 				for (int i = 0; i < jsonAddressArrary.size(); i++) {
 					Log.info("需要删除的地址个数为：" + jsonAddressArrary.size());

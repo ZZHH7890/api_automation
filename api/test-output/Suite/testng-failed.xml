@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="zzkgTest(failed)">
+  <test name="zzkgApiTest(failed)">
+    <groups>
+      <run>
+        <include name="P1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.zzkg.cases.find.FindModule">
+      <class name="com.zzkg.apicases.ZzkgApiCases">
         <methods>
-          <include name="afterMethod"/>
-          <include name="quickBuy" invocation-numbers="1 2"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterClass"/>
+          <include name="addGoodsToCart" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.zzkg.cases.find.FindModule -->
+      </class> <!-- com.zzkg.apicases.ZzkgApiCases -->
     </classes>
-  </test> <!-- zzkgTest(failed) -->
+  </test> <!-- zzkgApiTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
