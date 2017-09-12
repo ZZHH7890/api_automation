@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="1" ignored="3" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="3293" started-at="2017-09-07T10:30:27Z" finished-at="2017-09-07T10:30:30Z">
+  <suite name="Suite" duration-ms="8169" started-at="2017-09-11T10:21:40Z" finished-at="2017-09-11T10:21:48Z">
     <groups>
       <group name="P1">
-        <method signature="ZzkgApiCases.addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@475530b9]" name="addGoodsToCart" class="com.zzkg.apicases.ZzkgApiCases"/>
+        <method signature="ZzkgApiCases.addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="addGoodsToCart" class="com.zzkg.apicases.ZzkgApiCases"/>
       </group> <!-- P1 -->
     </groups>
-    <test name="zzkgApiTest" duration-ms="3293" started-at="2017-09-07T10:30:27Z" finished-at="2017-09-07T10:30:30Z">
+    <test name="zzkgApiTest" duration-ms="8169" started-at="2017-09-11T10:21:40Z" finished-at="2017-09-11T10:21:48Z">
       <class name="com.zzkg.apicases.ZzkgApiCases">
-        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@475530b9]" name="addGoodsToCart" duration-ms="993" started-at="2017-09-07T18:30:28Z" data-provider="buyProcess" finished-at="2017-09-07T18:30:29Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="beforeClass" is-config="true" duration-ms="2110" started-at="2017-09-11T18:21:40Z" finished-at="2017-09-11T18:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="beforeMethod" is-config="true" duration-ms="507" started-at="2017-09-11T18:21:42Z" finished-at="2017-09-11T18:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="addGoodsToCart" duration-ms="513" started-at="2017-09-11T18:21:42Z" data-provider="buyProcess" finished-at="2017-09-11T18:21:43Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +34,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addGoodsToCart -->
-        <test-method status="FAIL" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@475530b9]" name="addGoodsToCart" duration-ms="595" started-at="2017-09-07T18:30:29Z" data-provider="buyProcess" finished-at="2017-09-07T18:30:29Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="afterMethod" is-config="true" duration-ms="485" started-at="2017-09-11T18:21:43Z" finished-at="2017-09-11T18:21:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="beforeMethod" is-config="true" duration-ms="445" started-at="2017-09-11T18:21:43Z" finished-at="2017-09-11T18:21:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="addGoodsToCart" duration-ms="448" started-at="2017-09-11T18:21:44Z" data-provider="buyProcess" finished-at="2017-09-11T18:21:44Z">
           <params>
             <param index="0">
               <value>
@@ -81,7 +97,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addGoodsToCart -->
-        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@475530b9]" name="addGoodsToCart" duration-ms="516" started-at="2017-09-07T18:30:29Z" data-provider="buyProcess" finished-at="2017-09-07T18:30:30Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="afterMethod" is-config="true" duration-ms="474" started-at="2017-09-11T18:21:44Z" finished-at="2017-09-11T18:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="beforeMethod" is-config="true" duration-ms="424" started-at="2017-09-11T18:21:45Z" finished-at="2017-09-11T18:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="addGoodsToCart" duration-ms="413" started-at="2017-09-11T18:21:45Z" data-provider="buyProcess" finished-at="2017-09-11T18:21:46Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +121,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addGoodsToCart -->
-        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@475530b9]" name="addGoodsToCart" duration-ms="564" started-at="2017-09-07T18:30:30Z" data-provider="buyProcess" finished-at="2017-09-07T18:30:30Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="afterMethod" is-config="true" duration-ms="446" started-at="2017-09-11T18:21:46Z" finished-at="2017-09-11T18:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="beforeMethod" is-config="true" duration-ms="461" started-at="2017-09-11T18:21:46Z" finished-at="2017-09-11T18:21:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="addGoodsToCart(java.lang.String, java.lang.String)[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="addGoodsToCart" duration-ms="492" started-at="2017-09-11T18:21:46Z" data-provider="buyProcess" finished-at="2017-09-11T18:21:47Z">
           <params>
             <param index="0">
               <value>
@@ -113,6 +145,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addGoodsToCart -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="afterMethod" is-config="true" duration-ms="414" started-at="2017-09-11T18:21:47Z" finished-at="2017-09-11T18:21:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.zzkg.apicases.ZzkgApiCases@46d56d67]" name="afterClass" is-config="true" duration-ms="462" started-at="2017-09-11T18:21:47Z" finished-at="2017-09-11T18:21:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- com.zzkg.apicases.ZzkgApiCases -->
     </test> <!-- zzkgApiTest -->
   </suite> <!-- Suite -->

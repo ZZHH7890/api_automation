@@ -4,13 +4,19 @@
   <test name="zzkgApiTest(failed)">
     <groups>
       <run>
+        <include name="init.env"/>
         <include name="P1"/>
+        <include name="clear.env"/>
       </run>
     </groups>
     <classes>
       <class name="com.zzkg.apicases.ZzkgApiCases">
         <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
           <include name="addGoodsToCart" invocation-numbers="1"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- com.zzkg.apicases.ZzkgApiCases -->
     </classes>

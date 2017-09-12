@@ -4,11 +4,15 @@
 	<test name="zzkgApiTest">
 		<groups>
 			<define name="ALL">
+				<include name="init.env" />
+				<include name="clear.env" />
 				<include name="P1" />
 				<include name="P2" />
 			</define>
 			<run>
+				<include name="init.env" />
 				<include name="P1" />
+				<include name="clear.env" />
 			</run>
 		</groups>
 		<classes>
