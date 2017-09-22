@@ -4,9 +4,10 @@ import java.io.IOException;
 
 import org.apache.log4j.xml.DOMConfigurator;
 
-import common.GetApi;
-import common.HttpClientMethod;
-import common.Login;
+import com.zzkg.common.GetApi;
+import com.zzkg.common.HttpClientMethod;
+import com.zzkg.common.Login;
+
 import net.sf.json.JSONObject;
 
 public class GetDemoHttpDelete {

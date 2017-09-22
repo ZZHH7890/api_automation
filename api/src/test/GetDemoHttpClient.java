@@ -21,7 +21,7 @@ public class GetDemoHttpClient {
 		try {
 			httpget = new HttpGet(loginURL);
 			httpget.setHeader("region", "813395");
-			httpget.setHeader("token", "78241a07-8ecf-49b5-909a-6ec8eecebad3");
+			httpget.setHeader("token", "afa14b30-9e6c-458c-bc6a-25014408192f");
 			response = httpClient.execute(httpget);
 			System.out.println(response.getStatusLine());
 			String strResult = EntityUtils.toString(response.getEntity());

@@ -1,4 +1,4 @@
-package common;
+package com.zzkg.common;
 
 import java.io.IOException;
 import org.apache.http.client.ClientProtocolException;
@@ -9,7 +9,7 @@ public class Login {
 	public static String getToken() throws IOException {
 		Log.info("+++++++++++++++++开始调用Login获取token++++++++++++++++++++++");
 		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonconfig = GetApi.configJson(2);
+		JSONObject jsonconfig = GetApi.configJson(Config.TEST_ENV);
 		// 读取表格api.xlsx的第一行登录接口信息
 		JSONObject jsonapi = GetApi.getApiJson(1);
 		// 设置post方法的传入Body Data
@@ -32,7 +32,5 @@ public class Login {
 			Log.info(failString);
 			return failString;
 		}
-
 	}
-
 }

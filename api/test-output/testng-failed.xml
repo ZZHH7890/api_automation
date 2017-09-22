@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="api(failed)">
+  <test name="zzkgApiTest(failed)">
+    <groups>
+      <run>
+        <include name="init.env"/>
+        <include name="P1"/>
+        <include name="clear.env"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.zzkg.cases.addaddress.AddAddress">
+      <class name="com.zzkg.apicases.ZzkgApiCases">
         <methods>
           <include name="beforeClass"/>
-          <include name="checkAddAddress" invocation-numbers="2 3 4 5 7 18 24 25 26 27 28"/>
+          <include name="beforeMethod"/>
+          <include name="addGoodsToCart" invocation-numbers="1"/>
           <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.zzkg.cases.addaddress.AddAddress -->
+      </class> <!-- com.zzkg.apicases.ZzkgApiCases -->
     </classes>
-  </test> <!-- api(failed) -->
+  </test> <!-- zzkgApiTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

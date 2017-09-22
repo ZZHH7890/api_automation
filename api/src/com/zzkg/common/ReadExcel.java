@@ -1,4 +1,4 @@
-package common;
+package com.zzkg.common;
 
 import java.util.List;
 import java.io.File;
@@ -16,6 +16,7 @@ public class ReadExcel {
 		Log.info("=========================表格测试数据读取开始=========================");
 		File file = new File(filepath + "\\" + filename);
 		Log.info("测试数据表格：" + file.toString());
+		Log.info("读取sheet: " + sheetname);
 		FileInputStream inputStream = new FileInputStream(file);
 		Workbook workbook = new XSSFWorkbook(inputStream);
 		Sheet sheet = workbook.getSheet(sheetname);

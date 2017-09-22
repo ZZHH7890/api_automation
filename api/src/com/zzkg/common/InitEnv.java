@@ -1,9 +1,7 @@
-package common;
+package com.zzkg.common;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
-import org.apache.http.client.ClientProtocolException;
 
 import com.zzkg.japi.JavaApi;
 
@@ -13,9 +11,9 @@ public class InitEnv {
 	// 清空购物车
 	public static void clearCart() throws IOException {
 		Log.info("清空购物车");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonconfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第二行清空购物车接口信息
+		// 读取环境信息
+		JSONObject jsonconfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonapi = GetApi.getApiJson(2);
 		try {
 			// 执行清空购物车请求
@@ -24,19 +22,17 @@ public class InitEnv {
 			Log.info("清空购物车成功!" + result);
 
 		} catch (Exception e) {
-			String failString = "增加地址失败！";
+			String failString = "清空购物车失败！";
 			Log.info(failString);
 		}
-
 	}
 
 	// 增加收货地址
 	public static void addAddress() {
 		try {
-			JavaApi.addAddress("259", "18039", "自动化测试楼栋（勿删）", "深圳", "张大爷", "0", "22.408965", "113.826119",
-					"13714672776", "813395", "11111Aa", "东角山");
+			JavaApi.addAddress(Config.INIT_ADDRESS);
 		} catch (Exception e) {
-			String failString = "增加地址失败！";
+			String failString = "初始化增加地址失败！";
 			Log.info(failString);
 		}
 	}

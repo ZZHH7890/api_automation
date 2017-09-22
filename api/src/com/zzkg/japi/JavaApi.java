@@ -4,30 +4,25 @@ import java.io.IOException;
 
 import org.apache.http.client.ClientProtocolException;
 
-import common.GetApi;
-import common.HttpClientMethod;
-import common.Log;
-import common.Login;
+import com.zzkg.common.Config;
+import com.zzkg.common.GetApi;
+import com.zzkg.common.HttpClientMethod;
+import com.zzkg.common.Log;
+import com.zzkg.common.Login;
+
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 public class JavaApi {
 	// 购买商品接口
-	public static String buyGoods(String dealCount, String dealId, String limitFlag, String odLabelId, String selected,
-			String specId) throws IOException {
+	public static String buyGoods(String jsonString) throws IOException {
 		Log.info("+++++++++++++++++开始调用购买商品接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第三行购买商品接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonapi = GetApi.getApiJson(11);
 		// 设置post方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", dealCount);
-		jsonParam.put("dealId", dealId);
-		jsonParam.put("limitFlag", limitFlag);
-		jsonParam.put("odLabelId", odLabelId);
-		jsonParam.put("selected", selected);
-		jsonParam.put("specId", specId);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
@@ -39,22 +34,17 @@ public class JavaApi {
 			Log.info(failString);
 			return failString;
 		}
-
 	}
 
 	// 兑换赠品接口
-	public static String exchangeGift(String dealCount, String dealId, String selected)
-			throws ClientProtocolException, IOException {
+	public static String exchangeGift(String jsonString) throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用兑换赠品接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第三行兑换赠品接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonapi = GetApi.getApiJson(3);
 		// 设置put方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("dealCount", dealCount);
-		jsonParam.put("dealId", dealId);
-		jsonParam.put("selected", selected);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
 			String responseString = HttpClientMethod.putJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
@@ -69,36 +59,22 @@ public class JavaApi {
 	}
 
 	// 增加收货地址接口
-	public static String addAddress(String addressBuildingId, String addressNaviId, String building, String city1,
-			String contact, String gender, String latitude, String longitude, String phone, String regionId,
-			String room1, String village) throws ClientProtocolException, IOException {
+	public static String addAddress(String jsonString) throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用增加地址接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第四行增加收货地址接口信息
-		JSONObject jsonApi = GetApi.getApiJson(4);
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonapi = GetApi.getApiJson(4);
 		// 设置post方法的传入Body Data
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("addressBuildingId", addressBuildingId);
-		jsonParam.put("addressNaviId", addressNaviId);
-		jsonParam.put("building", building);
-		jsonParam.put("city1", "city1");
-		jsonParam.put("contact", contact);
-		jsonParam.put("gender", gender);
-		jsonParam.put("latitude", latitude);
-		jsonParam.put("longitude", longitude);
-		jsonParam.put("phone", phone);
-		jsonParam.put("regionId", regionId);
-		jsonParam.put("room1", room1);
-		jsonParam.put("village", village);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			// 执行接口请求并获取接口返回的string结果
-			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonapi.getString("apiurl"),
 					jsonConfig.getString("region"), Login.getToken(), jsonParam);
 			Log.info("+++++++++++++++++结束调用增加地址接口++++++++++++++++++++++");
 			return responseString;
 		} catch (Exception e) {
-			String failString = "接口执行失败，增加收货地址失败！！";
+			String failString = "接口执行失败，增加地址失败！！";
 			Log.info(failString);
 			return failString;
 		}
@@ -107,9 +83,9 @@ public class JavaApi {
 	// 获取最新添加的收货地址id
 	public static String getFirstAddressId() throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用获取收货地址id信息接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第七行获取订单确认接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(6);
 		try {
 			// 获取收货地址列表接口返回值string类型
@@ -129,12 +105,219 @@ public class JavaApi {
 
 	}
 
+	// 获取最新菜谱搜索的关键词id
+	public static String getFirstDiscoveryRecordId() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取最新菜谱搜索的关键词id信息接口++++++++++++++++++++++");
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(15);
+		try {
+			// 执行用户最近搜索关键词接口
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), Login.getToken());
+			// 将接口返回的字符串转换成json
+			JSONObject discoveryRecordApiJson = JSONObject.fromObject(responseString);
+			String data = discoveryRecordApiJson.getString("data");
+			JSONArray searchRecordArraryJson = JSONArray.fromObject(data);
+			JSONObject jsonObject = searchRecordArraryJson.getJSONObject(0);
+			String searchRecordId = jsonObject.getString("id");
+			Log.info("菜谱搜索最新历史记录searchRecordId: " + searchRecordId);
+			return searchRecordId;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取最新菜谱搜索的关键词id失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 删除菜谱搜索的关键词
+	public static String deleteDiscoveryRecordId(String searchRecordId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用删除菜谱搜索的关键词接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(14);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + searchRecordId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用删除菜谱搜索的关键词接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取prepayOrderId失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 增加or取消菜谱or文章关注
+	public static String attention(String cookbookArticleId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用增加or取消菜谱or文章关注接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(17);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用增加or取消菜谱or文章关注接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，增加or取消菜谱or文章关注失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 推荐菜谱/文章点赞
+	public static String like(String cookbookArticleId) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用推荐菜谱/文章点赞接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(18);
+		try {
+			String responseString = HttpClientMethod.postNoJson(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用推荐菜谱/文章点赞接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，推荐菜谱/文章点赞失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取推荐菜谱/文章详情
+	public static String getcookbookArticleDetail(String cookbookArticleId)
+			throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取推荐菜谱/文章详情接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(19);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + cookbookArticleId, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取推荐菜谱/文章详情接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取推荐菜谱/文章详情失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取搜索热词
+	public static String getHotKeywords() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取搜索热词接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(16);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取搜索热词接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取搜索热词失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取关注菜谱/文章列表
+	public static String getAttentionsList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取关注菜谱/文章列表接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(20);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取关注菜谱/文章列表接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取关注菜谱/文章列表失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取精选菜谱/文章列表
+	public static String getHandpickedList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取精选菜谱/文章列表接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(21);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用获取精选菜谱/文章列表接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取精选菜谱/文章列表失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取菜谱/文章banner轮播图
+	public static String getBannerList() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱/文章banner轮播图接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(22);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用菜谱/文章banner轮播图接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱/文章banner轮播图失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 菜谱/文章搜索
+	public static String searchcookbookArticle(String keyword) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱/文章搜索接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(23);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl") + keyword, jsonConfig.getString("region"), token);
+			Log.info("+++++++++++++++++结束调用菜谱/文章搜索接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱/文章搜索失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
 	// 订单确认信息获取carttoken
 	public static String getCartToken() throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用订单确认信息接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第七行获取订单确认接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(7);
 		try {
 			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
@@ -153,21 +336,13 @@ public class JavaApi {
 	}
 
 	// 执行下单接口获取订单号，支付金额
-	public static String[] getOrderInfo(String addressId, String buyWay, String cartToken, String deliverType,
-			String delivertime, String remark, String serviceReminderFlag) throws ClientProtocolException, IOException {
+	public static String[] getOrderInfo(String jsonString) throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用下单接口++++++++++++++++++++++");
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第八行下单接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(8);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("addressId", addressId);
-		jsonParam.put("buyWay", buyWay);
-		jsonParam.put("cartToken", cartToken);
-		jsonParam.put("deliverType", deliverType);
-		jsonParam.put("delivertime", delivertime);
-		jsonParam.put("remark", remark);
-		jsonParam.put("serviceReminderFlag", serviceReminderFlag);
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
 					jsonConfig.getString("region"), Login.getToken(), jsonParam);
@@ -195,9 +370,9 @@ public class JavaApi {
 			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用获取预支付订单接口++++++++++++++++++++++");
 		String token = Login.getToken();
-		// 读取表格config.xlsx的第二行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第九行获取预支付订单接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(9);
 		try {
 			String responseString = HttpClientMethod.get(jsonConfig.getString("host"),
@@ -218,16 +393,15 @@ public class JavaApi {
 	}
 
 	// 执行会员宝支付接口
-	public static String balancePay(String prepayOrderId) throws ClientProtocolException, IOException {
+	public static String balancePay(String prepayOrderId, String jsonString)
+			throws ClientProtocolException, IOException {
 		Log.info("+++++++++++++++++开始调用会员宝支付接口++++++++++++++++++++++");
 		String token = Login.getToken();
-		// 读取表格config.xlsx的第2行预发布环境信息
-		JSONObject jsonConfig = GetApi.configJson(2);
-		// 读取表格api.xlsx的第10行会员宝支付接口信息
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
 		JSONObject jsonApi = GetApi.getApiJson(10);
-		JSONObject jsonParam = new JSONObject();
-		jsonParam.put("expireTime", "");
-		jsonParam.put("password", "111111");
+		JSONObject jsonParam = JSONObject.fromObject(jsonString);
 		try {
 			String responseString = HttpClientMethod.postJson(jsonConfig.getString("host"),
 					jsonApi.getString("apiurl") + prepayOrderId, jsonConfig.getString("region"), token, jsonParam);
@@ -235,6 +409,46 @@ public class JavaApi {
 			return responseString;
 		} catch (Exception e) {
 			String failString = "接口执行失败，支付失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 执行菜谱一键购买接口
+	public static String quickBuy(String jsonArrayString) throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用菜谱一键购买接口++++++++++++++++++++++");
+		String token = Login.getToken();
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(12);
+		JSONArray jsonArray = JSONArray.fromObject(jsonArrayString);
+		try {
+			String responseString = HttpClientMethod.postJsonArray(jsonConfig.getString("host"),
+					jsonApi.getString("apiurl"), jsonConfig.getString("region"), token, jsonArray);
+			Log.info("+++++++++++++++++结束调用菜谱一键购买接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，菜谱一键购买失败！！";
+			Log.info(failString);
+			return failString;
+		}
+	}
+
+	// 获取购物车商品数量
+	public static String getCartCount() throws ClientProtocolException, IOException {
+		Log.info("+++++++++++++++++开始调用获取购物车商品数量接口++++++++++++++++++++++");
+		// 读取环境信息
+		JSONObject jsonConfig = GetApi.configJson(Config.TEST_ENV);
+		// 读取接口信息
+		JSONObject jsonApi = GetApi.getApiJson(13);
+		try {
+			String responseString = HttpClientMethod.get(jsonConfig.getString("host"), jsonApi.getString("apiurl"),
+					jsonConfig.getString("region"), Login.getToken());
+			Log.info("+++++++++++++++++结束调用获取购物车商品数量接口++++++++++++++++++++++");
+			return responseString;
+		} catch (Exception e) {
+			String failString = "接口执行失败，获取购物车中商品数量data失败！！";
 			Log.info(failString);
 			return failString;
 		}

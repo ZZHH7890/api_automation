@@ -2,13 +2,13 @@ package test;
 
 import org.testng.annotations.Test;
 
-import common.ClearEnv;
-import common.GetApi;
-import common.HttpClientMethod;
-import common.InitEnv;
-import common.Log;
-import common.Login;
-import datapro.ExchangeGiftPro;
+import com.zzkg.common.ClearEnv;
+import com.zzkg.common.GetApi;
+import com.zzkg.common.HttpClientMethod;
+import com.zzkg.common.InitEnv;
+import com.zzkg.common.Log;
+import com.zzkg.common.Login;
+
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
